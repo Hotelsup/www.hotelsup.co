@@ -1,0 +1,401 @@
+<?php
+ /* Template Name: About Page */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+					<section id="about_header" class="section">
+						<div class="container">
+										<div class="title_text">
+											<h1><?php the_title(); ?></h1>
+										</div>
+										<div id="about_title" class="description_text ">
+
+											<h5 class="en-font wow fadeInDown" data-wow-delay="1s">Vision</h5>
+											<h4 class="en-font wow fadeInDown" data-wow-delay="1s"><strong>To make hotel business possible to everyone</strong></h4>
+
+										</div>
+                        </div>
+
+
+						<video autoplay muted loop id="about_video">
+						<source src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/about/background_about_us.mp4" type="video/mp4">
+						</video>
+
+
+                    </section>
+				
+			
+
+                    <section id="about_sec_1" class="section">
+                        <div class="container">
+
+								<div class="text">
+									<h3 class="en-font"><strong>Hotelsup</strong></h3>
+										<h3><strong> ต้องการเข้ามาช่วยให้ธุรกิจโรงแรม</strong><br>
+										<strong>ง่ายและเป็นไปได้สำหรับทุกคน</strong></h3>
+
+										<p>มีเหตุผลมากมายที่ทำให้หลายคนอยากเป็นเจ้าของโรงแรม แต่การบริหารโรงแรม<br>
+			การตลาด บัญชี– ภาษีนั้นยุ่งยากและงานบางอย่างเป็นภาระแก่ทางผู้ประกอบการมากเกินไป</p>
+								</div>
+                        </div>
+                    </section>   
+
+
+                    
+                    <section id="about_sec_3"  class="section">
+                      
+							<div class="text text-top">
+
+									<div class="container">		
+
+									<h4 class="en-font">Mission</h4>
+									<h3 class="en-font"><strong>Maximize the capability of mid-range hotels through</strong></h3>
+									<h3 class="text_blue en-font"><strong>sharing valuable resources</strong></h3>
+
+									</div>
+							</div>
+
+
+							<div id="video_car_box">
+
+								<video autoplay muted loop id="car_video">
+								<source src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/about/mission.mp4" type="video/mp4">
+								</video>
+							</div>
+
+
+							<div class="text text-bottom">
+								<div class="container">		
+
+								<h3 class="en-font"><strong>Everyday we share something together</strong></h3>
+								<p>เป้าหมายของเราคือทำให้โรงแรมขนาดเล็ก-กลาง ได้ใช้ศักยภาพของห้องพักตนเองอย่างเต็มขีดความสามารถ<br>
+โดยสามารถทำให้โรงแรมดังกล่าวเข้าถึงทรัพยากรที่มีในโรงแรมชั้นนำ ด้วยต้นทุนที่เหมาะสมกับขนาดของโรงแรม<br>
+ผ่าน <strong class="en-font">sharing economy </strong></p>
+
+								</div>
+                  
+
+							</div>
+                  
+                    </section>   
+				
+				
+					<section id="about_sec_4">
+							<div class="container">
+
+								<?php if ( my_wp_is_mobile() ) : ?>
+									
+									<div class="row">
+
+
+										<div class="col-8">
+											<header  class="wow slideInRight" data-wow-duration="1s"  data-wow-delay="1s"> 
+												<h5>ปัจจุบัน ธุรกิจโรงแรมแข่งขันกันสูงมาก</h5>
+												<h4><strong>โรงแรมขนาดเล็กนั้นค่อนข้างเสียเปรียบ</strong></h4>
+											</header>
+
+
+										</div>
+
+										<div class="col-md-12  image mobile"   >
+
+										<div class="wow slideInRight" data-wow-duration="1s"   data-wow-delay="0.5s">
+											<img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/about/small_bussiness.svg"/>
+											</div>
+
+										</div>
+
+
+								
+
+										</div>
+
+										<div class="row justify-content-end">
+												<div class="col-6 text">
+												
+
+												<div  class="wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">	<p>เนื่องจากข้อจำกัดทางทรัพยากรและโรงแรมขนาดเล็กมี capacity ในการสร้างรายได้ที่น้อย ทั้งเรื่องของราคาห้อง จำนวนห้อง ทำให้เงินที่จะใช้ลงทุนกับทรัพยากรต่าง ๆ นั้นมีจำกัด รวมถึงอำนาจการต่อรองที่น้อยกว่าเมื่อเทียบกับโรงแรมขนาดใหญ่</p></div>
+											</div>
+
+
+										</div>
+
+										<!--- end  mobile--->
+								<?php else : ?>
+									
+
+
+									<div class="row">
+
+										<div class="col-md-6  image"   >
+
+										<div class="wow slideInRight" data-wow-duration="1s"   data-wow-delay="0.5s">
+											<img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/about/small_bussiness.svg"/>
+											</div>
+
+										</div>
+
+
+										<div class="col-md-6 text">
+											<header  class="wow slideInRight" data-wow-duration="1s"  data-wow-delay="1s"> 
+											<h5>ปัจจุบัน ธุรกิจโรงแรมแข่งขันกันสูงมาก</h5>
+											<h4><strong>โรงแรมขนาดเล็กนั้นค่อนข้างเสียเปรียบ</strong></h4>
+
+										
+
+											</header>
+
+											<div  class="wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">	<p>เนื่องจากข้อจำกัดทางทรัพยากรและโรงแรมขนาดเล็กมี <span id="got-l-font">capacity</span> ในการสร้างรายได้ที่<br>น้อย ทั้งเรื่องของราคาห้อง จำนวนห้อง ทำให้เงินที่จะใช้ลงทุนกับทรัพยากรต่าง ๆ นั้นมี<br>จำกัด รวมถึงอำนาจการต่อรองที่น้อยกว่าเมื่อเทียบกับโรงแรมขนาดใหญ่</p></div>
+										</div>
+
+
+										</div>
+
+										<!--- end  desktop--->
+								<?php endif; ?>
+
+
+
+							</div>
+					</section>
+
+
+
+					<section id="about_sec_5">
+						<div class="video-container">
+									<video autoplay muted loop width="1920px" height="auto" id="sec5-video" style="object-fit: cover;height:1180px">
+									<source src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/about/one-stop2-edit_2.mp4" type="video/mp4">
+									</video>
+									 </div>
+						
+								<div class="video-container-mob">
+									<video autoplay muted loop width="100%" height="auto" id="sec5-video" style="object-fit: cover;height:160px">
+									<source src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/about/one-stop2-edit_2.mp4" type="video/mp4">
+									</video>
+									 </div>
+							<div class="container" id="sec5-content">
+								 <div class="row">
+			
+																	  
+
+
+								 	<div class="col-6 col-md-8 text">
+											<header> 
+												<p> <strong><span id="got-b-font">Hotelsup</span></strong>  เกิดจากการรวมตัวกันของกลุ่มคนที่มีความเชี่ยวชาญธุรกิจโรงแรม<br>
+ในด้านที่แตกต่างกัน ได้แก่</p>	
+
+											<div class="only-desktop"> 
+											<h3><strong>การบริหารโรงแรม การตลาด และการเงิน-การบัญชี</strong></h3>
+											<h4>เพื่อแก้ปัญหาให้โรงแรมขนาดเล็ก-กลางอย่างครบวงจร</h4>
+											</div>
+										
+
+											</header>
+
+									 </div>
+
+
+<!-- 									 <div class="col-6  col-md-4 ipad">
+
+											<div class="type-wrap highlight">
+													
+													<h3>  <div id="typed-strings-ipad">
+														<span> Operation</span>
+														<span>Marketing</span>
+														<span>Accounting </span>
+														<span>One stop.. </span>
+
+														
+													</div></h3> 
+													<span id="typed-ipad"   style="white-space:pre;"></span>
+											
+										</div>
+
+
+                                	  </div> -->
+										
+
+								 </div>
+							</div>
+					</section>
+
+
+
+						  
+					<?php if ( wp_is_mobile() ) : ?>
+						<section id="about_sec_5_bt" class="d-block d-md-none">
+							<div class="container">
+											<div class="col-12 ">
+													<header> 
+									 
+													<h3><strong>การบริหารโรงแรม การตลาด และการเงิน-การบัญชี</strong></h3>
+													<h4>เพื่อแก้ปัญหาให้โรงแรมขนาดเล็ก-กลางอย่างครบวงจร</h4>
+												 
+												
+
+													</header>
+											</div>
+								 </div>
+						</section>
+						  <?php endif; ?>
+
+
+					
+				
+				
+					<section id="about_sec_6">
+
+
+							<div class="container">
+
+								<?php if ( my_wp_is_mobile() ) : ?>
+
+									<div class="row mobile">
+
+											<div class="col-12   ">
+												<header class="wow slideInLeft" data-wow-duration="1s"   data-wow-delay="0.5s"> 
+												<h5>ดังนั้น  <strong class="en-font">Hotelsup </strong> จึงต้องการทำให้ก</h5>
+												<h4><strong><span id="skv-b-font">โรงแรมเข้าถึงทรัพยากรคุณภาพดีได้ในต้นทุนที่ต่ำลง</span></strong></h4>
+
+											
+
+												</header>
+
+											 </div>
+
+											<div class="col-6  image">
+
+												<div  class="wow slideInLeft" data-wow-duration="1s"   data-wow-delay="0.2s" > 
+												<img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/about/check_hand.svg"/>
+												</div>
+
+											</div>
+
+
+											<div class="col-6  text">
+												
+
+												<div class="wow slideInLeft" data-wow-duration="1s"   data-wow-delay="0.7s">	<p>ทั้งทรัพยากรด้านมนุษย์ ความรู้ เทคโนโลยีและการติดต่อสื่อสาร<br>
+											เพื่อทำให้การบริหารธุรกิจโรงแรมเกิดประสิทธิภาพอย่างสูงสุดผ่าน <strong>sharing economy </strong></p></div>
+											</div>
+
+
+											</div>
+											<!--- end mobile -->
+
+
+								 <?php else : ?>
+
+
+								 <div class="row desktop">
+
+									 <div class="col-lg-5 col-md-4  image">
+
+											<div  class=""    > 
+											<img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/about/check_hand.svg"/>
+											</div>
+
+									</div>
+
+
+								 	<div class="col-lg-7 col-md-8 text">
+
+									 
+											<header class=""    > 
+											<h5>ดังนั้น  <strong class="en-font">Hotelsup </strong> จึงต้องการทำให้ก</h5>
+												<h4><strong><span id="skv-b-font">โรงแรมเข้าถึงทรัพยากรคุณภาพดีได้ในต้นทุนที่ต่ำลง</span></strong></h4>
+
+										
+
+											</header>
+
+											<div class=""   >	<p>ทั้งทรัพยากรด้านมนุษย์ ความรู้ เทคโนโลยีและการติดต่อสื่อสาร<br>
+เพื่อทำให้การบริหารธุรกิจโรงแรมเกิดประสิทธิภาพอย่างสูงสุดผ่าน <strong class="en-font">sharing economy </strong></p></div>
+									 </div>
+
+
+								 </div>
+								<!--- end desktop -->
+
+								<?php endif; ?>
+
+
+							</div>
+
+
+
+					</section>
+
+				
+				
+					<section id="sec_4">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+									<img src="<?php the_field('s4_image'); ?>">
+                                </div>
+                                <div class="col-md-5 sec_4_content">
+									<div class="content-sec4">
+										<h3><?php the_field('s4_subject'); ?></h3>
+										<?php the_field('s4_text'); ?>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    
+				
+                    <section id="last_sec" class="section">
+                        <div class="container">
+                            <div class="last_content">
+								<h3><?php the_field('last_subject'); ?></h3>
+								<div class="last-content-text">
+									<?php the_field('last_text'); ?>
+								</div>
+							</div>
+							<div class="last_img">
+								<img src="<?php the_field('last_image'); ?>">
+							</div>
+							<div class="last_img_mobile">
+								<img src="<?php the_field('last_image_mobile'); ?>">
+							</div>
+                        </div>
+                    </section>   
+
+
+        
+            </div><!-- #primary -->
+
+
+
+<?php 
+ 
+
+get_footer();
+?>
+
+<script>
+
+var typed4 = new Typed('#typed-ipad', {
+  stringsElement: '#typed-strings-ipad',
+  typeSpeed: 100,
+  backSpeed: 60,
+  startDelay:1500,
+  loop: true,
+  loopCount: Infinity,
+  
+});
+  /* end typing ipad */
+
+ </script>
