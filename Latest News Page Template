@@ -1,0 +1,70 @@
+<?php
+ /* Template Name: Latest News */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+					<section id="latest_title" class="section" style="background-image: url('<?php the_field('title_image'); ?>');background-size: cover;">
+						<div class="container">
+							<div class="title_text">
+								<h2><?php the_field('title_text'); ?></h2>
+							</div>
+                        </div>
+                    </section>
+					
+				
+					<section id="latest_item" class="section">
+
+                        	<div class="container" >
+								<section class="product_items" id="product_items">	
+											<?php
+											$args = array(  
+												'post_type' => 'news',
+												'posts_per_page' => -1, 
+												'order' => 'DESC',
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="latest_item_box col-md-4">
+													<div class="img">
+														<a href="<?php the_permalink(); ?>">  <img src="<?php the_field('image'); ?>">  </a>
+													 </div>
+													<div class="latest_list_des">
+
+														<h3><?php print the_title(); ?></h3>
+
+														<span class="latest_date"><?php the_field('date'); ?></span>
+
+														<div><?php the_field('address'); ?></div>
+
+														<div class="rm_link"><a href="<?php the_permalink(); ?>" class="readmore_latest">Read More</a></div>
+													</div>
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+							</section>
+						</div>
+
+                    </section>
+			
+
+                   
+              <?php include 'template_part/follow_our_social.php';?>
+            </div><!-- #primary -->
+
+
+
+<?php 
+ 
+
+get_footer();
