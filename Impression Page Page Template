@@ -1,0 +1,334 @@
+<?php
+ /* Template Name: Impression Page */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+				 
+			
+
+                    <section id="impression_sec_1" class="section">
+
+         
+                        <div class="container">
+
+                                   <h3 class="en-font wow fadeInUp text_dark_blue text-center module_title" data-wow-duration="1s" data-wow-delay="1s"><span>“ SIMPLICITY IS THE ULTIMATE SOPHISTICATION ”</span></h3>
+
+                                <div class="row justify-content-center">
+
+
+                                    
+                                    
+                                    <div class="col-lg-10">
+
+
+                                    <?php if ( wp_is_mobile() ) : ?>
+                                        <div class="img  wow fadeInUp text-center"  data-wow-duration="1s" data-wow-delay="1s">
+                                                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/rice terrance photo with line terrance fn -01.jpg"/>
+                                             </div>
+                                        <?php else : ?>
+                                                <div class="img  wow fadeInUp text-center"  data-wow-duration="1s" data-wow-delay="1s">
+                                                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/impression/rice-image.svg" id="rice-img"/>
+                                             </div>
+                                    
+                                        <?php endif; ?>
+
+                                         
+                                    </div>  
+
+
+ 
+
+                                </div>
+
+
+                                <div class="bt_text  wow fadeInUp" data-wow-delay="1.5s">ออกแบบสื่อต่าง ๆ ด้วยลายเส้นที่เรียบง่าย กระชับ ซึ่งได้ <strong>แรงบันดาลใจมาจากรูปร่างของนาขั้นบันได </strong> <br>
+และแทรกพื้นที่ว่างเล็กน้อยเพื่อความสบายตา</div>
+
+							 
+                        </div>
+                    </section>   
+
+
+                    
+                    <section id="impression_sec_2"  class="section">
+
+
+                    
+                    <div class="container">
+
+
+                            <div class="row justify-content-center">
+
+
+                                    
+                                    
+                                    <div class="col-lg-12">
+
+                                            <div class="wow fadeInUp text-center"  data-wow-duration="1s" data-wow-delay="1.5s">
+                                                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/impression/rice terrance2.jpg"/>
+                                            </div>
+                                    
+                                    </div>  
+
+
+
+
+                            </div>
+
+
+                            <div class="row justify-content-center">
+
+
+                                    
+                                    
+                                    <div class="col-lg-8">
+
+
+                                        <div class="bt_text wow fadeInUp "><strong><span id="skv-b-font">นาขั้นบันได</span></strong> มีลักษณะคล้ายขั้นบันไดอยู่ตามเนินเขาหรือกลางหุบเขา เป็นแนวกั้นเพื่อป้องกันไม่ให้น้ำไหลออกมา
+            จากขนาดและรูปทรงของผืนนาที่แตกต่างกันไป รวมถึงลักษณะพื้นที่ที่มีความลาดชันทำให้ไม่สามารถใช้เครื่องจักรทุ่นแรงได้
+            ด้วยเหตุนี้นาทุกขั้นจึงเกิดจากฝีมือของชาวบ้านรวมกัน นับเป็นภูมิปัญญาชาวนาโบราณอย่างแท้จริง</div>
+                                
+                                      </div> 
+
+                                        
+                                </div> 
+                   
+                        </div>     
+ 
+    
+                    </section>   
+				
+				
+                    <section id="impression_sec_3"  class="section">
+                      
+						 
+                             <div class="container">
+
+                                    <div class="row justify-content-center">
+
+                                        <div class="col-lg-9"> 
+                                 
+                                                    <div class="row">
+
+                                                         <div class="col-md-6 col-lg-7">
+                                                                <div class="wow fadeInUp img">
+                                                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/impression/rice terrance3.jpg"/>
+                                                                </div>
+                                                         </div>
+
+                                                            <div class="col-md-6  col-lg-5 align-self-center bt_text">
+                                                                    <div class="wow fadeInUp" id="text-content-sil">
+                                                                                <h3>ความสงบ เรียบร้อย</h3>
+                                                                                <p>นาขั้นบันไดที่มีความสลับซับซ้อน <br>
+                                                                                แต่เมื่อได้เห็นกลับรู้สึกถึงความสงบ เรียบร้อย<br>
+                                                                                ซึ่งเป็นสิ่งที่ทางโฮเทลทรัพย์ต้องการนำเสนอออกมา</p>
+                                                                        </div>
+                                                                                                                
+                                                             </div>
+
+                                            
+                                                    </div>
+
+                                      </div>               
+
+                                 </div>
+				 </div>
+			 </section>
+
+
+
+                    
+                    <section id="impression_sec_4"  class="section">
+                      
+						 
+                                 <div class="container">
+                                         
+                                        <div class="row justify-content-center">
+
+                                                   
+                                                   <div class="col-lg-8">
+
+
+                                                                <h3 class="module_title  en-font">
+                                                                TYPEFACE
+                                                                </h3>
+
+                                                                                        
+
+                                                                                        <div class="font-box" class="wow slideInLeft" data-wow-duration="1s"    >
+
+                                                                                                
+                                                                                                <div class="row">
+
+                                                                                                        <div class="col-lg-4 col-md-4">
+
+                                                                                                                
+
+                                                                                                                <span class="font-name en-font">Gotham</span>
+                                                                                                                <p class="font-description en-font">To make hotel bussiness <br>possible to everyone</p>
+                                                        
+
+                                                                                                        </div>
+
+                                                                                                        <div class="col-lg-8 col-md-8">
+
+                                                                                                                  <div class="font-image"> 
+                                                                                                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/impression/font eng-12.jpg"/>               
+                                                                                                                </div>
+
+                                                                                                        </div>
+
+                                                                                                </div>
+
+
+
+                                                                                        </div>
+
+
+                                                                                        <div class="font-box" class="wow slideInLeft" data-wow-duration="1s"    >
+
+                                                                                                                                                                        
+                                                                                                <div class="row">
+
+                                                                                                        <div class="col-lg-4 col-md-4">
+
+                                                                                                                
+
+                                                                                                                <span class="font-name en-font">SukhumvitSet</span>
+                                                                                                                <p>ธุรกิจโรงแรมเป็นไปได้<br>
+                        สำหรับทุกคน</p>
+
+
+                                                                                                        </div>
+
+                                                                                                        <div class="col-lg-8 col-md-8">
+
+                                                                                                                  <div class="font-image"> 
+                                                                                                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/impression/font thai-12.jpg"/>               
+                                                                                                                    </div>      
+
+                                                                                                        </div>
+
+                                                                                                </div>
+
+
+
+                                                                                        </div>
+
+                                                                         </div>                 
+                                                                 </div>
+
+                                                                  <!--- end font ---->
+
+
+                                                                  <div id="two_logos">
+
+                                                                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/impression/two_Logos.jpg"/>               
+
+
+                                                                  </div>
+
+
+                                                                  <div id="two_logos3">
+
+                                                                                     
+                                                                                 
+                                                                       <div class="row">
+
+                                                                                <div class="col-4 col-md-4">
+
+                                                                                  <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/impression/logo1.jpg"/>               
+
+
+                                                                                </div>
+
+                                                                                
+                                                                                <div class="col-4  col-md-4">
+
+
+                                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/impression/logo2.jpg"/>              
+
+                                                                                
+                                                                                </div>
+
+                                                                                <div class="col-4  col-md-4">
+
+
+                                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/impression/logo3.png"/>              
+
+                                                                                
+                                                                                </div>
+
+
+                                                                       </div>          
+
+
+                                                                </div>
+
+					 
+
+								 
+					 </div>
+				 </section>
+
+
+
+
+                                                        
+                        <section id="impression_sec_5"  class="section">
+                        
+                                                        
+                                <div class="container">
+
+
+                                                                
+                                </div>
+
+
+			  </section>
+
+
+
+			 
+					
+				
+				
+				  
+
+                    
+			 
+
+        
+            </div><!-- #primary -->
+
+
+
+<?php 
+ 
+
+get_footer();
+?>
+
+<script>
+
+var typed4 = new Typed('#typed-ipad', {
+  stringsElement: '#typed-strings-ipad',
+  typeSpeed: 100,
+  backSpeed: 60,
+  startDelay:1500,
+  loop: true,
+  loopCount: Infinity,
+  
+});
+  /* end typing ipad */
+
+ </script>
