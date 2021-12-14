@@ -1,0 +1,1265 @@
+<?php
+ /* Template Name: Service Page */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+
+                 <section id="service_header" class="section">
+
+
+						<div class="container">
+                            
+							<div class="title_text d-none">
+								<h1 class="en-font"><span class="text_dark_blue">“ ONE STOP</span> SERVICE</h1>
+                                <h1  class="en-font"> <span class="text_dark_blue">ONE STOP</span> COMMUNICATION ”</h1>
+							</div>
+
+
+                            <div id="service_header_video" class="d-none">
+                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/head_service.jpg"/>
+                            </div>
+
+
+                            <?php if(get_field('video_intro')) :?>
+                                <video autoplay muted loop id="service_video">
+                                <source src="<?php the_field('video_intro'); ?>" type="video/mp4">
+                                </video> 
+                            <?php endif;?>  
+						 <div id="before_op"></div>
+                        </div>
+
+
+					 
+
+                    </section>
+				
+
+				 
+			
+
+                    <section id="service_tab" class="section">
+
+         
+                        <div class="container">
+
+                                <div id="header_service_tab">
+
+
+                                     <nav class="nav nav-pills   flex-sm-row">
+                                        <a class="flex-sm-fill text-sm-center nav-link  " aria-current="page" href="#operation_content">Operation</a>
+                                        <a class="flex-sm-fill text-sm-center nav-link" href="#marketing-content">Marketing</a>
+                                        <a class="flex-sm-fill text-sm-center nav-link" href="#service_sec_7">Accounting</a>
+                                     </nav>
+
+                                    <div id="service_arrows"> 
+
+<!--                                       <a onclick="scrollStepUp()" class="up">   </a>
+                                      <a onclick="scrollStepDown()" class="down">   </a> -->
+
+                                       <!--- <button class="prev">Prev</button>
+                                        <button class="next">Next</button>--->
+
+
+                                    </div>
+                                
+
+
+                                </div>
+
+
+                             
+							 
+                        </div>
+
+                    </section>   
+
+
+                    
+                    <section id="operation_content" class="section box box1">
+
+                     
+
+                        <div id="operation1"> 
+
+
+                                    <div class="container">
+
+                                            <div id="header_operation">
+                                                <h2 class="en-font text_dark_blue service_title mb-4"> <strong>Operation </strong>  </h2>
+                                            </div>
+
+
+                                            <div class="row">
+
+
+                                                 <div class="col-lg-7 col-md-8 img">
+
+                                                    <div id="ruller_block">
+                                                        <header> 
+                                                         <h3 class="en-font wow  fadeInUp"><strong>STANDARD</strong></h3>
+                                                        </header>
+
+
+                                                        <div class="img wow  fadeInUp">   <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/ruller.png"/></div>
+
+                                                        <div class="text"> 
+
+                                                                <p class="white_text">บริการดี ห้องพักดี โรงแรมคุณภาพ คำว่า ดี คืออะไร อะไรคือตัวชี้วัดมาตรฐาน<br>
+        เพราะไม้บรรทัดการวัดความพึงพอใจของแต่ละคนย่อมไม่เท่ากัน จึงจำเป็นต้อง
+        มี standard (มาตรฐาน) ที่เป็นเหมือนระเบียบการทำงาน และตัวชี้วัดมาตรฐาน
+        การบริการรวมถึงห้องพักของโรงแรมให้สามารถวัดผลและรักษาเกณฑ์ไว้เสมอ</p>
+
+                                                          </div>
+
+
+
+                                                    </div> 
+
+
+                                                 </div>
+
+
+                                                 <div class="col-lg-5 col-md-4 text">
+
+
+                                                 <div id="pencil" class="wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">   <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/pancil.png"/></div>
+
+
+                                                 </div>
+
+
+
+                                            </div>
+    
+                                        
+                                        
+                                    </div>
+
+                          </div>
+                          <!-- end  operation1--->    
+                          
+                          
+                          <div id="operation2" class="  "> 
+
+
+                            <div class="container">
+
+
+                                <div class="row"> 
+
+                                                <div id="operation_icon_box" class="col-5 col-lg-6 align-self-center">
+
+                                                    <div id="operation_icon"   role="tablist" aria-orientation="vertical">
+
+                                                    <?php if ( my_wp_is_mobile() ) : ?>
+                                                                <div  class="tab active item" data-toggle-target=".tab-content-1">
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/default/sop.png"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/click/sop.png"/></div>
+                                                                    <h4>SOP</h4>
+                                                                </div>
+                                                           
+
+                                                         
+                                                                <div class="tab item" data-toggle-target=".tab-content-2">
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/default/hr.png"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/click/hr.png"/></div>
+                                                                    <h4>HR</h4>
+                                                                </div>
+                                                          
+
+                                                         
+                                                                <div class="tab item" data-toggle-target=".tab-content-3">
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/default/purchasing.png"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/click/purchasing.png"/></div>
+                                                                    <h4>Purchasing</h4>
+                                                                </div>
+                                                           
+
+                                                            
+                                                       
+                                                           
+                                                                <div class="tab item" data-toggle-target=".tab-content-4">
+                                                                     <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/default/document.png"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/click/document.png"/></div>
+                                                                    <h4>Document</h4>
+                                                                </div>
+                                                          
+
+
+                                                             
+                                                                <div class="tab item"  data-toggle-target=".tab-content-5">
+                                                                     <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/default/support.png"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/click/support.png"/></div>
+                                                                    <h4>Support</h4>
+                                                                </div>
+                                                        
+
+
+                                                              
+                                                                <div class="tab item" data-toggle-target=".tab-content-6">
+                                                                <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/default/qc.png"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/icon_operation/click/qc.png"/></div>
+                                                                    <h4>QC</h4>
+                                                                </div>
+                                                        
+                                                      <?php else : ?>
+
+
+                                                             <div  class="tab active item" data-toggle-target=".tab-content-1">
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon1.svg"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon1hover.svg"/></div>
+                                                                    <h4>SOP</h4>
+                                                                </div>
+                                                           
+
+                                                         
+                                                                <div class="tab item" data-toggle-target=".tab-content-2">
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon2.svg"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon2hover.svg"/></div>
+                                                                    <h4>HR</h4>
+                                                                </div>
+                                                          
+
+                                                         
+                                                                <div class="tab item" data-toggle-target=".tab-content-3">
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon3.svg"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon3hover.svg"/></div>
+                                                                    <h4>Purchasing</h4>
+                                                                </div>
+                                                           
+
+                                                            
+                                                       
+                                                           
+                                                                <div class="tab item" data-toggle-target=".tab-content-4">
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon4.svg"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon4hover.svg"/></div>
+                                                                    <h4>Document</h4>
+                                                                </div>
+                                                          
+
+
+                                                             
+                                                                <div class="tab item"  data-toggle-target=".tab-content-5">
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon5.svg"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon5hover.svg"/></div>
+                                                                    <h4>Support</h4>
+                                                                </div>
+                                                        
+
+
+                                                              
+                                                                <div class="tab item" data-toggle-target=".tab-content-6">
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon6.svg"/></div>
+                                                                    <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/icons/icon6hover.svg"/></div>
+                                                                    <h4>QC</h4>
+                                                                </div>
+                                                        
+                                                        
+
+                                                      <?php endif; ?>
+                                                            
+
+
+                                                    </div>
+
+
+                                                </div>
+
+
+                                                <div id="operation_board" class="col-7 col-lg-6">
+
+                                                    <div id="operation_paper">
+
+                                                         <span id="paper_pin"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/blue_pin_paper.png"/></span>
+
+                                                        <h4 id="board_title">It’s all about <span>'Human'</span></h4>
+
+                                                                <div id="board_description"> 
+
+                                                                    <div class=" "  >
+
+                                                                        <div class="tab-content tab-content-1 active"  >
+
+                                                                            <p>SOP (Standard Operating Procedure) <br>
+                                                    คือ ขั้นตอนการปฏิบัติงานที่ถูกต้องชัดเจน เพื่อทำให้โรงแรม
+                                                    มีระบบทำงานที่ทำให้เกิดมาตรฐาน เป็นที่พึงพอใจแก่ลูกค้า 
+                                                    โดยเรามี SOP กับทุกแผนกของโรงแรม ตั้งแต่ แผนกรับลูกค้า
+                                                    (Front), แม่บ้าน (House keeping), ช่างเทคนิค
+                                                    (Technician), บัญชี (Accounting)</p>
+
+                                                                        </div>
+                                                                        <!-- end item --->
+
+                                                                        <div class="tab-content tab-content-2"  >
+
+                                                                         <p>เจ้าของโรงแรมแทบทุกคนต้องพบเจอปัญหาพนักงานลาออก
+แล้วไม่มีบุคลากรมาทดแทนได้ทันท่วงที และต้องมาปวดหัวกับ
+การสอนงานใหม่อยู่ตลอด Hotelsup จึงรับหน้าที่จัดหา
+คัดเลือก บุคลากรทุกแผนก พร้อมทั้งฝึกอบรมเพื่อให้พร้อมกับ
+การเข้ามาปฏิบัติงานให้ทางโรงแรมได้อย่างเรียบร้อย</p>
+
+                                                                        </div>
+                                                                        <!-- end item --->
+
+
+                                                                        <div class="tab-content tab-content-3"  >
+
+                                                                        <p>จัดระบบการสั่งซื้อสั่งจ่ายของภายในโรงแรม (เชื่อมกันกับแผนก
+บัญชีของบริการ ‘Accounting’) นอกจากนี้ยังเปรียบเทียบราคา
+และคุณภาพสินค้า จาก supplier ต่าง ๆ เพื่อให้โรงแรมประหยัด
+ต้นทุนให้ได้มากที่สุดแต่ยังได้ของที่มีคุณภาพ ยิ่งไปกว่านั้นยังมี
+ระบบบริหารสต็อกสินค้า (Inventory management) สำหรับ
+การคำนวณวัน เวลาและจำนวนที่ควรสั่งซื้อที่เหมาะสมอีกด้วย</p>
+
+                                                                        </div>
+                                                                        <!-- end item --->
+
+
+
+                                                                        <div class="tab-content tab-content-4"  >
+
+                                                                            <p>ทาง Hotelsup มีศูนย์ปฏิบัติงานส่วนกลาง (Head Quarter)
+ที่ดูแลทุกอย่างที่เกี่ยวข้องกับเอกสารทั้งหมด เช่น Shift log,
+H.K., Maintenance logbook, Immigration และอื่น ๆ
+ซึ่งทำให้การเก็บเอกสารทุกอย่างของโรงแรมเป็นระบบ ระเบียบ
+ปลอดภัยและง่ายต่อการตรวจสอบงานย้อนหลัง</p>
+
+                                                                            </div>
+                                                                            <!-- end item --->
+
+
+                                                                            <div class="tab-content tab-content-5"  >
+
+                                                                            <p>เรารับฟังปัญหาทุกอย่างที่เกิดขึ้นกับพนักงาน
+เพื่อนำมาวิเคราะห์และดำเนินการแก้ไข รวมถึงอัพเดทงาน
+กับเจ้าของโรงแรมอยู่เสมอ และหากมีจุดใดที่ทางเจ้าของโรงแรม
+ต้องการให้ยืดหยุ่นหรือปรับเปลี่ยนให้เหมาะสมกับลักษณะ
+ของทางโรงแรมเองสามารถชี้แจงและหาทางร่วมกัน
+เพื่อให้เกิดความพึงพอใจมากที่สุด</p>
+
+                                                                            </div>
+                                                                            <!-- end item --->
+
+                                                                            
+                                                                            <div class="tab-content tab-content-6"  >
+
+                                                                            <p>เนื่องจาก Hotelsup เข้ามาทำให้การทำงานของโรงแรมนั้น
+เป็นระบบ ซึ่งระบบที่ดีย่อมมาซึ่งการตรวจสอบได้ ดังนั้น Hotelsup
+จึงประเมินงานส่วนต่าง ๆ อยู่เสมอ ทั้งการประเมินคุณภาพ
+การให้บริการของพนักงานโรงแรม, คุณภาพห้องพัก,
+ความผิดพลาดของเอกสาร และอื่น ๆ เป็นต้น</p>
+
+                                                                            </div>
+                                                                            <!-- end item --->
+
+
+
+
+                                                                     </div>
+
+                                                            </div>
+
+
+                                                       <span id="paper_logo"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/human_kanjistamp.png"/></span>
+
+
+
+                                                   
+
+                                                        
+
+                                                    </div>
+                                                    <span id="paper_small"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/small_paper.png"/></span>
+                                                </div>
+
+                                  </div>          
+                            </div>
+
+                        </div>
+                        <!-- end  operation2--->    
+
+
+                        <div id="operation_content_3"  class="section  ">
+
+
+                                                
+                            <div class="container">
+
+
+                                <div class="row justify-content-end">
+
+                                <?php if ( my_wp_is_mobile() ) : ?>
+                                            <div>
+
+                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/train crew 1.jpg"/>
+                                            </div>
+
+                                        <?php endif; ?>
+
+                                    <div class="col-md-7 text wow pulse ">
+
+                                   
+
+
+                                            <div  >
+                                                  <h6 class="service_title_sub en-font  <?php if ( my_wp_is_mobile() ) : ?><?php else : ?>
+    white_text
+<?php endif; ?>"> <strong>TRAINING </strong></h6>
+
+                                                    <h3  class="service_title1  <?php if ( my_wp_is_mobile() ) : ?><?php else : ?>
+    white_text
+<?php endif; ?>" > <strong class="en-font">SOP</strong> <strong class=" ">ไม่ใช่แค่คู่มือที่บอกว่าต้องทำอะไร</strong> </h3>
+
+                                                    <div class=" <?php if ( my_wp_is_mobile() ) : ?><?php else : ?>
+    white_text
+<?php endif; ?>">   <p id="sop-text-des">แต่ทางทีมงาน <strong class=" ">Hotelsup</strong> จะเข้าไปสอนและให้คำแนะนำในแต่ละขั้นตอนอย่างละเอียด เพื่อให้การทำงานของพนักงานโรงแรมทุกคนเป็นไปตามมาตรฐานที่ <strong class=" ">Hotelsup</strong> วางไว้ให้ได้มากที่สุด อย่างไรก็ตามแต่ละโรงแรมย่อมมีจุดเด่นและวัฒนธรรมที่แตกต่างกัน SOP นี้ก็พร้อมปรับตัวไปกับโรงแรมของคุณเพื่อให้มาตรฐานโรงแรมที่เกิดขึ้นนั้นยังคงเอกลักษณ์ดั้งเดิมของคุณเองอยู่ด้วย</p></div>
+
+                                             </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>     
+
+
+                         </div>   <div id="before_market"></div>
+
+                          <!-- end  operation3--->   
+                          
+                          
+                          <div id="operation_content_4"  class="section">
+
+
+                                                                            
+                            <div class="container">
+
+
+                                <div class="row  ">
+
+                                    <div class="col-md-6 text ">
+
+
+                                                    <h6 class="en-font service_title_sub en-font "><strong>HOUSE KEEPING</strong></h6>
+                                                    <h3 class="service_title1 ">ความสะอาดเป็นเรื่องสำคัญไม่แพ้กัน</h3>
+
+                                                    <div class="service_p ">   <p>นอกจากห้องพักและการบริการที่ดีแล้ว แผนกทำความสะอาดนั้นขาดไม่ได้เลย<br>แต่ขณะเดียวกันก็เป็นอีกหนึ่งส่วนที่มักเกิดปัญหามากที่สุด บริการด้าน<br>Operation ทำให้การทำความสะอาดมีมาตรฐาน สามารถควบคุมได้แม้กระทั่ง<br>เรื่องเล็กน้อยอย่างชนิดผ้า น้ำยาทำความสะอาด ตลอดจนขั้นตอนทำความสะอาด<br>ที่ถูกต้อง รวมถึงการทดแทนคนกรณีลาออกกะทันหัน เพื่อให้โรงแรมและแขก<br>ของคุณรู้สึกสะอาด สบายใจ ปลอดภัย ภายใต้บรรยากาศที่ดีของโรงแรม
+</p></div>
+
+
+
+                                    </div>
+
+
+                                    <div class="col-md-6 img-clean" >
+
+                                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/HOUSE_KEEPING.jpg"/>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>     
+
+
+                            </div>   
+
+                            <!-- end  operation4---> 
+
+
+                            
+                        <div id="operation_content_5"  class="section">
+
+                                                                            
+                            <div class="container">
+
+
+                                <div class="row justify-content-end">
+
+                                    <div class="col-md-10">
+
+                                        <div class="orga-img">
+
+                                                 <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/purchasing edit crop.jpg"/>
+                                        </div>
+
+                                    </div>
+									<div class="row text purchasing-sec justify-content-end">
+
+                                                <div class="col-4 col-lg-5 " >
+
+                                
+                                                        <h6 class="en-font service_title_sub en-font"><strong>PURCHASING</strong></h6>
+                                                        <h3 class="service_title1"><span id="skv-b-font">สั่งซื้ออย่างฉลาด</span></h3>
+
+                                                                    
+
+
+                                                </div>
+
+                                                <div class="col-6  col-lg-6 " >
+
+                                                     <div class="service_p">   <p>ทุกส่วนของโรงแรมย่อมมีการเบิกของ-สั่งจ่าย บางแห่งทำบัญชี<br> 
+                    มีระบบอย่างที่เคยทำไว้อยู่แล้ว แต่จะดีกว่าไหมถ้าเรามาช่วยควบคุม<br>
+                    ต้นทุนแต่ยังได้สินค้าคุณภาพดี รวมถึงสามารถคำนวณเวลา<br>
+                    และจำนวนการสั่งซื้อได้อีกด้วย</p></div>
+
+                                                
+                                                </div>
+
+
+
+                                        </div>
+
+                                </div>
+								
+
+                            </div>     
+
+
+                            </div>   
+
+                            <!-- end  operation5--->   
+
+
+
+                    </section>   
+
+
+
+
+
+                    		
+                <section id="marketing-content"  class="section box box-2">
+
+
+                         <div class="container">
+
+                             <h3 class="en-font  white_text"><strong>Marketing</strong></h3>
+                                <div class="row justify-content-center"> 
+
+                                    <div class="col-lg-10"> 
+
+                                        <div class="row">
+
+
+                                                <div class="col-md-6 icon-market-content">
+
+
+                                                    <div id="marketing_icons">
+
+
+                                                            <?php if ( my_wp_is_mobile() ) : ?>
+
+                                                              <div class="icon tab active wow slideInLeft"  data-bs-toggle="modal" href="#marketing_popup1" >
+                                                                <div class="img"> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/online-marketing.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/online-marketing-hover.png"/></div>
+
+                                                                <div class="text"><h4>Online marketing</h4></div>
+                                                                
+
+                                                            </div>
+
+                                                            <div class="icon tab  wow slideInLeft"  data-bs-toggle="modal" href="#marketing_popup2" >
+                                                                <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/content.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/content-hover.png"/></div>
+
+                                                                <div class="text"><h4>Content</h4></div>
+
+                                                            </div>
+
+
+                                                            <div class="icon tab  wow slideInLeft"  data-bs-toggle="modal" href="#marketing_popup3" >
+                                                                <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/channel-manager.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/channel-manager-hover.png"/></div>
+                                                                <div class="text"><h4>Channel managertent</h4></div>   
+
+                                                            </div>
+
+
+                                                            <div class="icon tab  wow slideInLeft" data-bs-toggle="modal" href="#marketing_popup4" >
+
+                                                                <div class="img">  <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/report.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/report-hover.png"/></div>
+                                                                <div class="text"><h4>Report</h4></div>   
+                                                            
+
+                                                            </div>
+
+                                                            <div class="icon tab  wow slideInLeft"  data-bs-toggle="modal" href="#marketing_popup5" >
+                                                                <div class="img"> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/training.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/training-hover.png"/></div>
+                                                                <div class="text"><h4>Training</h4></div>   
+
+                                                            </div>
+                                                                
+                                                            <?php else : ?>
+
+
+                                                                
+                                                            <div class="icon tab active wow slideInLeft"   href="#mt1"  data-toggle-target="#mt1">
+                                                                <div class="img"> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/online-marketing.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/online-marketing-hover.png"/></div>
+
+                                                                <div class="text"><h4>Online marketing</h4></div>
+                                                                
+
+                                                            </div>
+
+                                                            <div class="icon tab  wow slideInLeft"    href="#mt2"  data-toggle-target="#mt2">
+                                                                <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/content.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/content-hover.png"/></div>
+
+                                                                <div class="text"><h4>Content</h4></div>
+
+                                                            </div>
+
+
+                                                            <div class="icon tab  wow slideInLeft"   href="#mt3"  data-toggle-target="#mt3">
+                                                                <div class="img"><img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/channel-manager.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/channel-manager-hover.png"/></div>
+                                                                <div class="text"><h4>Channel managertent</h4></div>   
+
+                                                            </div>
+
+
+                                                            <div class="icon tab  wow slideInLeft"   href="#mt4"  data-toggle-target="#mt4">
+
+                                                                <div class="img">  <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/report.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/report-hover.png"/></div>
+                                                                <div class="text"><h4>Report</h4></div>   
+                                                            
+
+                                                            </div>
+
+                                                            <div class="icon tab  wow slideInLeft"   href="#mt5" data-toggle-target="#mt5">
+                                                                <div class="img"> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/training.png"/>
+                                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/training-hover.png"/></div>
+                                                                <div class="text"><h4>Training</h4></div>   
+
+                                                            </div>
+                                                                 
+                                                            <?php endif; ?>
+
+
+
+
+
+                                                    </div>
+
+                                                    
+                                            
+
+
+                                                </div>
+
+                                                <!-- end icon --->
+
+
+
+                                                <?php if ( my_wp_is_mobile() ) : ?>             
+                                                    <div id="pop_up_marketing">
+
+
+                                                    
+                                                                        <div class="modal fade contact_modal " id="marketing_popup1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                                                            <div class="modal-dialog  ">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <button type="button" class="btn-close-contact" data-bs-dismiss="modal" aria-label="Close">
+
+                                                                                        <img src="<?php echo get_stylesheet_directory_uri() ; ?>/assests/img/mobile/arrow_back.svg" alt="">
+
+                                                                                        </button>
+                                                
+                                    
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+
+
+                                                                                    
+                                                                                        <div class="mb-4">  <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/Group 208.png"/> 
+                                                                                        </div>
+
+
+                                                                                      <p>ก้าวข้ามการตลาดแบบเดิม ๆ ที่รอลูกค้าเดินเข้ามาจองห้องพัก
+                                                                                        ขยายไปสู่การวางขายห้องพักบน OTA โดยเริ่มจากการวิเคราะห์
+                                                                                        กลุ่มลูกค้าและคู่แข่งเพื่อสร้างราคาและโปรโมชั่นที่เหมาะสม
+                                                                                        แผนการตลาดที่ถูกต้องและสามารถเอาชนะโรงแรมอีกหลายแห่ง
+                                                                                        บน OTAs ได้ซึ่งราคาที่ขายบน OTAs ไม่จำเป็นต้องเป็นราคาที่ต่ำ
+                                                                                        ที่สุด แต่ควรเป็นราคาที่จะทำให้ได้กำไรมากที่สุด</p>
+
+
+
+
+
+                                                                                
+                                                                                    </div>
+                                                                                
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                          <!--- end modal 1 ---->
+
+                                                                        <div class="modal fade contact_modal " id="marketing_popup2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                                                            <div class="modal-dialog  ">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <button type="button" class="btn-close-contact" data-bs-dismiss="modal" aria-label="Close">
+
+                                                                                        <img src="<?php echo get_stylesheet_directory_uri() ; ?>/assests/img/mobile/arrow_back.svg" alt="">
+
+                                                                                        </button>
+                                                
+                                    
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+
+
+                                                                                    
+                                                                                             <div  >
+
+                                                                                            <div class="mb-3"> 
+                                                                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/content2.png"/> 
+                                                                                            </div>
+
+                                                                                        
+
+                                                                                            </div>
+
+                                                                                            <div class="mb-4" >
+
+                                                                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/content1.png"/> 
+
+
+                                                                                            </div>
+
+                                                                                            <div>    <p>สร้างคอนเทนต์โรงแรมให้น่าสนใจ
+                                                                                            ออกแบบอาร์ตเวิร์ค ถ่ายภาพโรงแรม
+                                                                                            จัดทำเว็บไซต์และ social media ต่าง ๆ 
+                                                                                            เพื่อเพิ่มการรับรู้ และดึงดูดมากขึ้น</p></div>
+
+
+
+
+
+                                                                                
+                                                                                    </div>
+                                                                                
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--- end modal 2 ---->
+
+
+                                                                        <div class="modal fade contact_modal " id="marketing_popup3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                                                            <div class="modal-dialog  ">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <button type="button" class="btn-close-contact" data-bs-dismiss="modal" aria-label="Close">
+
+                                                                                        <img src="<?php echo get_stylesheet_directory_uri() ; ?>/assests/img/mobile/arrow_back.svg" alt="">
+
+                                                                                        </button>
+                                                
+                                    
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+
+
+                                                                                    
+                                                                                         <div class="mb-4"> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/channel-manager2.png"/> </div>
+                                                                                          
+                                                                                              <div class="mb-4"> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/channel-manager1.png"/> </div>   
+
+                                                                                              <div class="mb-3"> <p>ไม่ต้องยุ่งยากกับการจัดสรรห้องที่ต้องแบ่งมาขายทางออนไลน์หรือกลัวเกิด
+ปัญหาห้องล้น สับสนกับการเปิด-ปิดห้องพัก อีกต่อไป เพราะทางโรงแรมจะได้
+ระบบ <strong>Channel Manager </strong> ฟรี ซึ่งมาช่วยให้การจัดการห้องพักง่ายขึ้นและ
+วิเคราะห์ข้อมูลต่าง ๆ ได้อย่างรวดเร็วและมีประสิทธิภาพ </p></div> 
+
+
+                                                                                
+                                                                                    </div>
+                                                                                
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--- end modal  3 ---->
+
+
+                                                                        <div class="modal fade contact_modal " id="marketing_popup4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                                                            <div class="modal-dialog  ">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <button type="button" class="btn-close-contact" data-bs-dismiss="modal" aria-label="Close">
+
+                                                                                        <img src="<?php echo get_stylesheet_directory_uri() ; ?>/assests/img/mobile/arrow_back.svg" alt="">
+
+                                                                                        </button>
+                                                
+                                    
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+
+ 
+                                                                                             <div class="mb-4"> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/marketing3.png"/> </div>   
+
+                                                                                             <div class="mb-4">    <p>รายงานผลรายสัปดาห์ รายเดือน รายปี นอกจากนี้ทางทีมงานสามารถ
+นัดพบโรงแรมทุกเดือนเพื่อแลกเปลี่ยนความคิดเห็นพูดคุยถึงแผนงานใน
+อนาคตเพื่อให้โรงแรมเติบโตไปในทิศทางที่ดีร่วมกัน </p></div>
+                                                                                
+                                                                                    </div>
+                                                                                
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--- end modal 4 ---->
+
+
+                                                                        <div class="modal fade contact_modal " id="marketing_popup5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                                                            <div class="modal-dialog  ">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <button type="button" class="btn-close-contact" data-bs-dismiss="modal" aria-label="Close">
+
+                                                                                        <img src="<?php echo get_stylesheet_directory_uri() ; ?>/assests/img/mobile/arrow_back.svg" alt="">
+
+                                                                                        </button>
+                                                
+                                    
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+
+ 
+                                                                                            
+                                                                                         <div class="mb-5"> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/marketing4.png"/> </div>      
+                                                                                         <div class="">    <p>อาจไม่ใช่เรื่องคุ้นเคยสำหรับพนักงานโรงแรมเมื่อมีการจองทางออนไลน์เข้ามา
+ผ่านระบบ ทางทีมงานยินดีเข้าไปฝึกการใช้ระบบ Channel Manager ให้กับ
+พนักงานจนกว่าพนักงานของท่านจะสามารถดำเนินงานได้อย่างราบรื่น และ
+หากเกิดปัญหาใด ๆ สามารถติดต่อทีมงานได้ 24 ชม. ผ่านช่องทางที่หลากหลาย</p></div>
+                                                                                    </div>
+                                                                                
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--- end modal 5 ---->
+
+
+
+
+                                                    </div>
+                                                    <?php else : ?>
+
+
+
+
+                                                        <!---   desktop--->
+
+                                                <div class="col-md-6 content-market-right">
+
+                                                    <div class="content_tab_marketing">
+
+                                                            <div id="mt1" class="item tab-content active"> 
+
+                                                                <p>ก้าวข้ามการตลาดแบบเดิม ๆ ที่รอลูกค้าเดินเข้ามาจองห้องพัก<br>
+                                                                ขยายไปสู่การวางขายห้องพักบน OTA โดยเริ่มจากการวิเคราะห์<br>
+                                                                กลุ่มลูกค้าและคู่แข่งเพื่อสร้างราคาและโปรโมชั่นที่เหมาะสม<br>
+                                                                แผนการตลาดที่ถูกต้องและสามารถเอาชนะโรงแรมอีกหลายแห่ง<br>
+                                                                บน OTAs ได้ซึ่งราคาที่ขายบน OTAs ไม่จำเป็นต้องเป็นราคาที่ต่ำ<br>
+                                                                ที่สุด แต่ควรเป็นราคาที่จะทำให้ได้กำไรมากที่สุด</p>
+
+                                                                <div>
+                                                                    
+
+                                                                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/Group 208.png"/> 
+                                                                </div>
+
+                                                            </div>   
+                                                            
+                                                            
+                                                            <div id="mt2" class="item tab-content"> 
+                                                               
+                                                                    <div class="row">
+
+                                                                        <div class="col-lg-6 mt2-left">
+
+                                                                            <div class="mb-3"> 
+                                                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/content2.png"/> 
+                                                                             </div>
+
+                                                                             <p>สร้างคอนเทนต์โรงแรมให้น่าสนใจ<br>
+ออกแบบอาร์ตเวิร์ค ถ่ายภาพโรงแรม<br>
+จัดทำเว็บไซต์และ social media ต่าง ๆ<br> 
+เพื่อเพิ่มการรับรู้ และดึงดูดมากขึ้น</p>
+
+                                                                        </div>
+
+                                                                        <div class="col-lg-6 mt2-right">
+
+                                                                            <img src="https://hotelsup.co/wp-content/uploads/2021/12/content-score.png"/> 
+
+                                                                        
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                            </div> 
+
+                                                            <div id="mt3" class="item tab-content text-center"> 
+
+                                                                <div class="mb-3"> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/channel-manager2.png"/> </div>
+                                                                <div class="mb-3"> <p>ไม่ต้องยุ่งยากกับการจัดสรรห้องที่ต้องแบ่งมาขายทางออนไลน์หรือกลัวเกิด<br>
+ปัญหาห้องล้น สับสนกับการเปิด-ปิดห้องพัก อีกต่อไป เพราะทางโรงแรมจะได้<br>
+ระบบ <strong>Channel Manager </strong> ฟรี ซึ่งมาช่วยให้การจัดการห้องพักง่ายขึ้นและ<br>
+วิเคราะห์ข้อมูลต่าง ๆ ได้อย่างรวดเร็วและมีประสิทธิภาพ </p></div> 
+                                                                <div> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/channel-manager1.png"/> </div>   
+
+                                                            </div> 
+
+                                                            <div id="mt4" class="item tab-content"> 
+                                                                <div class="mb-4">    <p>รายงานผลรายสัปดาห์ รายเดือน รายปี นอกจากนี้ทางทีมงานสามารถ<br>
+นัดพบโรงแรมทุกเดือนเพื่อแลกเปลี่ยนความคิดเห็นพูดคุยถึงแผนงานใน<br>
+อนาคตเพื่อให้โรงแรมเติบโตไปในทิศทางที่ดีร่วมกัน </p></div>
+                                                            
+                                                                <div> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/Group248.png"/> </div>      
+
+                                                            </div> 
+
+                                                            <div id="mt5" class="item tab-content"> 
+                                                                 <div class="mb-4">    <p>อาจไม่ใช่เรื่องคุ้นเคยสำหรับพนักงานโรงแรมเมื่อมีการจองทางออนไลน์เข้ามา<br>
+ผ่านระบบ ทางทีมงานยินดีเข้าไปฝึกการใช้ระบบ Channel Manager ให้กับ<br>
+พนักงานจนกว่าพนักงานของท่านจะสามารถดำเนินงานได้อย่างราบรื่น และ<br>
+หากเกิดปัญหาใด ๆ สามารถติดต่อทีมงานได้ 24 ชม. ผ่านช่องทางที่หลากหลาย</p></div>
+                                                            
+                                                                <div> <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/25640621-IMG_8168.png"/> </div>      
+
+                                                            </div> 
+
+                                                    </div>
+
+                                                
+                                                </div>
+                                                <!-- end col -6 --->
+
+                                                <?php endif; ?>        
+
+                                        </div><!---end row -->
+
+
+                                        <div class="row">
+
+                                                <div id="our_performance">
+                                                    <h3 class="en-font"><strong>Our Performance</strong></h3>
+                                                    <div class="cont en-font">
+                                                        <h4 id="counter"><strong class="en-font "> <span class="counter-value" data-count="20">0</span>-<span class="counter-value" data-count="300">0</span></strong>%</h4>
+                                                    </div>
+                                                    <p class="en-font">hotel revenue growth</p>
+
+                                                </div>
+
+
+
+                                                <div id="bottom_marketing" class="row">
+
+                                                    <div class="col-7 col-md-6">
+
+                                                    
+                                                            <div id="maximize_revenue">
+                                                             <h4 class="en-font white_text"><strong>Maximize Revenue</strong></h4>
+                                                             <p>นำโรงแรมของคุณ รวมเข้ากับทรัพยากรที่ดีของเรา<br>
+                        เพื่อให้โรงแรมสามารถโชว์ศักยภาพและสร้างรายได้ได้อย่างสูงสุด</p>
+
+                                                            </div>
+
+
+                                                            <h4 class="en-font"><strong>Beginning from zero </strong></h4>
+                                                            <p>เริ่มตั้งแต่ลงทะเบียนสมัคร OTAs เจ้าต่าง ๆ, วางโครงสร้าง<br>ราคาห้องร่วมกับเจ้าของโรงแรม, ถ่ายรูปภาพใหม่ และเพิ่มยอด<br>การจองห้องพักอย่างมั่นคง</p>
+
+                                                    </div>
+
+
+                                                    <div class="col-5 col-md-6">
+
+
+                                                            <div id="marketing_grahp" class="animate-circle wow"  > 
+                                                                            
+                                                                            <div id="line1" style="height:211px">
+
+                                                                            </div>
+
+                                                                            <div id="line2" style="height:252px"> 
+
+                                                                                    <div class="blue" style="height:42px"></div>
+                                                                                
+                                                                            </div>
+
+                                                                            <div id="line3" style="height:630px">
+
+                                                                                    <div class="blue" style="height:420px"></div>
+                                                                                
+                                                                                </div>
+
+
+                                                            </div>
+
+                                                    
+                                                    </div>
+
+
+                                                </div>
+
+
+                                        </div><!---end row -->
+
+
+                                      </div>      <!---end col -->
+
+
+                               </div><!---end row -->
+
+
+
+                        </div>
+
+               </section>   
+
+
+
+
+                    
+            
+				
+                <section id="service_sec_7"  class="section  box box3">
+                         <div class="container">
+
+                             <h3 class="en-font text_dark_blue"><strong>Accounting</strong></h3>
+
+                            <div class="row justify-content-end ">
+
+                                    <div class="col-lg-9 col-md-10 book-position">
+
+                                        <div id="book_ac_slide">
+
+                                            <div>
+                                                <div id="final_book" class="item"> 
+
+
+                                                     <?php if ( wp_is_mobile() ) : ?>
+                                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/finance.png"/>
+                                                          <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/Financial-book-hover.png"/>
+                                                    <?php else : ?>
+                                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/financial_book default .png"/>
+                                                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/financial_book_hover.png"/>
+                                                    <?php endif; ?>
+
+
+                                                
+
+
+
+                                               </div>
+
+                                            </div>
+
+                                            <div>
+                                                     <div id="account_book" class="item"> 
+
+                                                       
+                                                        <?php if ( wp_is_mobile() ) : ?>
+                                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/accounting.png"/>
+                                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/accounting-book-hover.png"/>
+                                                        <?php else : ?>
+                                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/accounting_book default .png"/>
+                                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/accounting_book_hover.png"/>
+
+                                                        <?php endif; ?>
+
+
+                                                    </div>
+                                            </div>
+
+
+                                            <div>
+                                                 <div id="hrm_book" class="item"> 
+
+                                                    
+
+                                                     <?php if ( wp_is_mobile() ) : ?>
+                                                          <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/hr.png"/>
+                                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/Hrm-book-hover.png"/>
+                                                        <?php else : ?>
+                                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/hrm_book default.png"/>
+                                                          <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/hrm_book_hover.png"/>
+                                                        <?php endif; ?>
+
+
+                                                 </div>
+                                            
+                                             </div>
+
+
+                                        </div>
+
+                                        <div id="book_ac_slide_cell"></div>
+
+
+                                        
+                                        <div id="book_ac_slide_text">
+
+                                                    <div>
+														<p>บริหารการเงินภายในโรงแรมได้ง่าย ควบคุมเงินเข้า-ออกอย่างเป็นระบบผ่านการกำหนด
+        วันจ่าย (Payday) การเรียงและจัดเก็บเอกสารอย่างเป็นระเบียบ สรุปการเงินอย่างละเอียด
+        เพื่อการวางแผนการเงินที่ดีในอนาคต</p>
+
+
+                                                    </div>
+
+                                                    <div>
+														<p>เรามีทีมบัญชีที่เข้าใจและเชี่ยวชาญในสายงานธุรกิจโรงแรม ใช้รูปแบบการทำงานที่ออกแบบ
+        มาให้เหมาะกับโรงแรมขนาดเล็กถึงกลาง สื่อสารง่ายไม่ต้องอธิบายเยอะ ลดขั้นตอนเอกสาร
+        เพิ่มขั้นตอนการตรวจสอบ ครอบคลุมทั้งรายรับ-รายจ่าย ดูแลการยื่นภาษี ช่วยให้พนักงาน
+        และทีมงานไม่ต้องปวดหัวกับการทำงานร่วมกับแผนกบัญชีอีกต่อไป</p>
+
+
+                                                    </div>
+
+                                                    <div>
+
+                                                    <p>บริหารพนักงานให้ง่ายขึ้น เราช่วยดูแลตั้งแต่การจ่ายเงินเดือน จดบันทึกวันลาและ OT
+        จัดทำเอกสารสัญญา ทำประกันสังคม รวมไปถึงใบอนุญาตทำงานของคนต่างด้าว
+        ครอบคลุมทุกงานที่เกี่ยวข้องกับสวัสดิการพนักงานตามนโยบายที่โรงแรมกำหนด</p>
+
+
+                                                    </div>
+
+                                        
+                                        </div>
+                                        <!---- end book text--->
+
+
+                                    </div>
+
+
+                            </div>
+        
+                         </div>
+                    </section>
+
+
+
+                                                                    
+                <section id="service_sec_8"  class="section">
+                            
+                                                            
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-md-6">
+
+
+                                        <div class="img">
+                                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/service/clound.png"/>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="col-md-6">
+
+                                            <h6 class="service_title_sub en-font"><strong>CLOUD</strong></h6>
+                                            <h3 class="service_title1"><strong><span id="skv-b-font">โยนกองเอกสารทั้งหมดทิ้งไป</span></strong></h3>
+
+                                            <div class="service_p">   <p>แล้วเลือกเก็บข้อมูลของคุณไว้ในที่ที่ปลอดภัย อีกทั้งยังไม่จำกัดจำนวน<br>
+เพราะกระดาษเป็นอะไรที่หายง่ายยิ่งกว่าคีย์การ์ดเสียอีก จะเกิดอะไรขึ้น<br>
+ถ้ารอบตัวมีแต่เอกสารสำคัญ, ข้อมูลลูกค้า, ความลับที่ไม่ควรเปิดเผย<br>
+และต่าง ๆ อีกมากมาย ยังไม่นับรวมตอนที่พนักงานต้องมานั่งจัด<br>
+ระเบียบมันอีก ขณะที่ตรงหน้ามีแขกรอให้พนักงานของคุณต้อนรับ <br>
+(ซึ่งควรจะเป็นหน้าที่จริง ๆ ของงานบริการไม่ใช่งานเอกสารเช่นนี้) </p></div>
+
+                                            
+
+                                    
+                                    </div>
+
+                                </div>
+
+
+
+                                                            
+                            </div>
+
+
+            </section>
+
+
+
+
+         
+
+
+                                                        
+                 <section id="service_sec_9"  class="section">
+                        
+                                                        
+                                <div class="container">
+
+                                        <h3 class="text-center en-font">Get started today</h3>
+
+                                        <div class="text-center en-font mb-5">   <p>Hand over your burden, let’s us fullfill the potential of your hotel</p></div>
+
+                                        <div class="text-center">
+
+                                        <a href="<?php the_field('contact_link'); ?>" class="btn btn-light en-font">Free Consultation</a>
+
+                                        </div>
+                                     
+
+
+                                                                
+                                </div>
+
+
+			     </section>
+
+
+
+			 
+					
+				
+				
+				  
+
+                    
+			 
+
+        
+            </div><!-- #primary -->
+
+
+<script>
+function scrollStepUp() {
+  window.scrollBy(0, -1200);
+}
+function scrollStepDown() {
+  window.scrollBy(0, 1200);
+}
+</script>
+<?php 
+get_footer();
+?>
+ 
