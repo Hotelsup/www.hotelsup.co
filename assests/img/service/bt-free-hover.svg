@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="469.966" height="296.966" viewBox="0 0 469.966 296.966">
+  <defs>
+    <filter id="Rectangle_440" x="0" y="0" width="469.966" height="296.966" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.212"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="bt-free-hover" transform="translate(57.483 57.483)">
+    <g transform="matrix(1, 0, 0, 1, -57.48, -57.48)" filter="url(#Rectangle_440)">
+      <rect id="Rectangle_440-2" data-name="Rectangle 440" width="295" height="122" rx="61" transform="translate(57.48 57.48)" fill="#f7f7f7"/>
+    </g>
+    <path id="Subtraction_7" data-name="Subtraction 7" d="M1163.991-4204.758a61.4,61.4,0,0,1-10.291-9.526,61.162,61.162,0,0,1-7.883-11.669,60.673,60.673,0,0,1-5.041-13.38A61.279,61.279,0,0,1,1139-4254a60.621,60.621,0,0,1,4.794-23.744,61.014,61.014,0,0,1,5.624-10.361,61.447,61.447,0,0,1,7.449-9.028,61.433,61.433,0,0,1,9.028-7.449,61.019,61.019,0,0,1,10.362-5.624A60.622,60.622,0,0,1,1200-4315h173a60.579,60.579,0,0,1,24.321,5.041,61.018,61.018,0,0,1,10.552,5.9,61.458,61.458,0,0,1,9.126,7.806,60.743,60.743,0,0,0-16.735-8.646A60.928,60.928,0,0,0,1381-4308H1208a60.621,60.621,0,0,0-23.744,4.793,61,61,0,0,0-10.362,5.625,61.424,61.424,0,0,0-9.028,7.448,61.443,61.443,0,0,0-7.449,9.028,60.992,60.992,0,0,0-5.624,10.362A60.617,60.617,0,0,0,1147-4247a60.655,60.655,0,0,0,4.552,23.164,60.8,60.8,0,0,0,12.44,19.078Z" transform="translate(1435 -4192) rotate(180)" fill="rgba(131,219,249,0.33)"/>
+  </g>
+</svg>
