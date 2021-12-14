@@ -1,0 +1,366 @@
+<?php
+ /* Template Name: Spirits Page */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+					<section id="about_other_header" class="section">
+						<div class="container">
+							<div class="title_text">
+								<h1>About</h1>
+							</div>
+							 
+                        </div>
+
+
+					 
+
+                    </section>
+				
+			
+
+                    <section id="spirits_sec_1" class="section">
+
+                        <div id="right_background"></div>
+
+
+
+
+                        <div class="container">
+
+                                <div class="row">
+
+
+                                    <div class="col-lg-6 col-md-5 text">
+
+
+                                        <h3 class="en-font wow fadeIn" data-wow-duration="1s" data-wow-delay="2s"><strong>“ GOOD PEOPLE</strong></h3>
+                                        <h3 class="en-font wow fadeIn" data-wow-duration="1s" data-wow-delay="2s"><strong>MAKE A GREAT TEAM ”</strong></h3>
+
+
+                                    </div>     
+                                    
+                                    <div class="col-lg-6 col-md-7 img">
+
+                                            <div class="wow fadeIn"  data-wow-duration="1s" data-wow-delay="1s">
+                                                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/spirits/About_Apple.jpg"/>
+                                             </div>
+                                    
+                                    </div>  
+
+
+
+
+                                </div>
+
+							 
+                        </div>
+                    </section>   
+
+
+                    
+                    <section id="spirits_sec_2"  class="section">
+                      
+						 
+                        <div class="container">		
+
+                             <h3 class="module_title_small  en-font"><strong>Core values</strong></h3>
+
+
+                             <div class="row">
+
+                                <div class="col-md-6">
+
+                                    <div class="box_style_1 wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+
+                                        <div class="item wow slideInLeft"  data-wow-duration="1s" data-wow-delay="0.5s">
+
+                                            <h4 class="en-font"> <strong>Growth and Development</strong>   </h4>
+                                            <p id="font-18px">เรียนรู้ พัฒนาตนเอง และหมั่นศึกษาหาความรู้ในสิ่งใหม่ ๆ อยู่เสมอ ไม่ว่าจะเป็น<br>เรื่องของเทคโนโลยี ข่าวสาร ทักษะต่าง ๆ และนำความรู้นั้นมาใช้งานได้อย่างดี</p>  
+
+
+                                        </div>
+                                        <!--- end item --->
+
+                                        <div class="item wow slideInLeft"  data-wow-duration="1s" data-wow-delay="0.5s">
+
+                                            <h4 class="en-font"><strong>Commitment Responsibility</strong></h4>
+                                            <p id="font-18px">รักษาสัญญาอย่างแน่วแน่ให้กับงาน ไม่ผัดวันประกันพรุ่ง ซึ่งช่วยทำให้เป้าหมายที่วางไว้นั้น<br>เห็นผลตามลำดับขั้นอย่างชัดเจน อีกทั้งเป็นการรับผิดชอบต่อเพื่อนร่วมงานและลูกค้าไม่ให้<br>ได้รับผลกระทบจากการผิดสัญญาอีกด้วย</p>  
+
+
+                                        </div>
+                                        <!--- end item --->
+
+
+                                        <div class="item wow slideInLeft"  data-wow-duration="1s" data-wow-delay="0.5s">
+
+                                        <h4 class="en-font"><strong>Pursuit Focus Passion Will</strong></h4>
+                                        <p id="font-18px">มุ่งมั่นตั้งใจ อดทน ไม่ย่อท้อต่อปัญหาและอุปสรรคในการทำงาน อันเป็นปัจจัยขับเคลื่อน<br>
+และพลังที่จะทำให้เราไล่ตามจุดมุ่งหมาย</p>  
+
+
+                                        </div>
+                                        <!--- end item --->
+
+
+                                        <div class="item wow slideInLeft"  data-wow-duration="1s" data-wow-delay="0.5s">
+
+                                        <h4 class="en-font"><strong>Team</strong></h4>
+                                        <p id="font-18px">การที่องค์กรจะเติบโตอย่างเข้มแข็งและยั่งยืนนั้น ไม่ใช่เพียงบุคคลใดเพียงบุคคลเดียว<br>แต่ควรเกิดจากคนในองค์กรร่วมมือกันเพื่อให้เกิดประสิทธิภาพงานสูงสุด และทำให้คน<br> ในองค์กรเข้าใจถึงความสำเร็จร่วมกัน</p>  
+
+
+                                        </div>
+                                        <!--- end item --->
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                 <div class="box_style_1" data-wow-duration="1s" data-wow-delay="0.7s">
+
+                                        <div class="item wow slideInLeft"  data-wow-duration="1s" data-wow-delay="0.5s">
+
+                                                <h4 class="en-font"><strong>Integrity Trust Honesty</strong></h4>
+                                                <p id="font-18px">ยึดถือความซื่อตรง ซื่อสัตย์ จริงใจต่อผู้อื่น เป็นการสร้างคุณธรรมในใจของตนเอง<br>และความไว้วางใจจากผู้อื่น</p>  
+
+
+                                            </div>
+                                            <!--- end item --->
+
+                                            <div class="item wow slideInLeft"  data-wow-duration="1s" data-wow-delay="0.5s">
+
+                                            <h4 class="en-font"><strong>Change Creative Initiative</strong>
+    </h4>
+                                            <p id="font-18px"> มีความคิดริเริ่ม สร้างสรรค์สิ่งใหม่ เปิดใจกว้าง รับฟังความคิดเห็นของผู้อื่นอย่างไม่มีทิฐิ</p>  
+
+
+                                            </div>
+                                            <!--- end item --->
+
+                                            <div class="item wow slideInLeft"  data-wow-duration="1s" data-wow-delay="0.5s">
+
+                                            <h4 class="en-font"><strong>OMOIYARI</strong>
+                                            </h4>
+                                            <p id="font-18px"> ความรู้สึกเห็นใจ เอาใจใส่ต่อผู้อื่น อันเป็นรากฐานสำคัญของการอยู่ในสังคมและ<br>ช่วยทำให้การทำงานเป็นทีมได้ดีขึ้น</p>  
+
+
+                                            </div>
+                                            <!--- end item --->
+
+                                            <div class="item wow slideInLeft"  data-wow-duration="1s" data-wow-delay="0.5s">
+
+                                            <h4 class="en-font"><strong>Be positive</strong>
+                                            </h4>
+                                            <p id="font-18px">สิ่งที่ดีต่าง ๆ ในชีวิต เริ่มต้นได้จากการมีพลังงานบวกในตนเอง และเมื่อมีพลังงานบวก<br>อยู่รอบตัว สังคมในองค์กรจะน่าอยู่ มีสุขภาพจิตที่ดี ทำสิ่งต่าง ๆ ได้อย่างสร้างสรรค์</p>  
+
+
+                                            </div>
+                                            <!--- end item --->
+                                     </div>
+ 
+                                
+                                </div>
+
+                             </div>
+
+                            
+
+                        </div>
+    
+                    </section>   
+				
+				
+                    <section id="spirits_sec_3"  class="section">
+                      
+						 
+                                 <div class="container">		
+
+                                 <h3 class="module_title_small  en-font"><strong>Ethics</strong></h3>
+
+								 
+
+                                    <div id="brow_card" class="wow slideInLeft" data-wow-duration="1s"  >
+
+                                        <p class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"><span>ความรับผิดชอบ</span> ต่อ ตนเอง เพื่อน ลูกค้า สังคม </p>
+                                        <p class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"><span>หลีกเลี่ยง</span> ความขัดแย้งทางผลประโยชน์</p>
+                                        <p class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"><span>ปฏิบัติ</span> ตามกฎหมายและข้อบังคับของประเทศ</p>
+
+
+                                    </div>
+					 
+
+								 
+							</div>
+					</section>
+
+
+
+                    
+                    <section id="spirits_sec_4"  class="section">
+                      
+						 
+                                 <div class="container">		
+
+                                 <h3 class="module_title_small en-font"><strong>Norms</strong></h3>
+
+								 
+
+                                    <div class="box_style_2" class="wow slideInLeft" data-wow-duration="1s"    >
+
+                                        
+                                            <div class="row">
+
+                                                    <div class="col-md-6">
+
+                                                        <div class="sec4-content">
+
+                                                            <div class="item wow slideInLeft" data-wow-duration="1s"  >
+
+                                                                <h4 class="en-font"><strong>Make a promise and keep it</strong>   </h4>
+                                                                <p id="font-18px">การรักษาสัญญาแม้เพียงเรื่องเล็ก ๆ เป็นคุณสมบัติที่สามารถแสดงถึง<br>ความรับผิดชอบต่องานใหญ่ ๆ ได้</p>  
+
+
+                                                            </div>
+                                                            <!--- end item --->
+
+                                                            <div class="item wow slideInLeft" data-wow-duration="1s"  >
+
+                                                                <h4 class="en-font"><strong>Work hard to pursue the accomplishment</strong></h4>
+                                                                <p id="font-18px">มีความตั้งใจจริงต่อการพยายามทำสิ่งใดให้สำเร็จ</p>  
+
+
+                                                            </div>
+                                                            <!--- end item --->
+
+
+                                                            <div class="item wow slideInLeft" data-wow-duration="1s" >
+
+                                                            <h4 class="en-font"><strong>Everyone’s goal over one’s goal</strong></h4>
+                                                            <p id="font-18px">นึกถึงเป้าหมายส่วนรวมก่อนเป้าหมายของตนเอง</p>  
+
+
+                                                            </div>
+                                                            <!--- end item --->
+
+
+                                                            <div class="item wow slideInLeft" data-wow-duration="1s"  >
+
+                                                            <h4 class="en-font"><strong>Self-learning and self-assessment,<br>Open for feed back</strong></h4>
+                                                            <p id="font-18px">ศึกษา เรียนรู้ และประเมินการทำงานของตนเองได้ รวมถึงมีใจเปิดกว้าง<br>ต่อการรับฟังความคิดเห็นจากผู้อื่น</p>  
+
+
+                                                            </div>
+                                                            <!--- end item --->
+
+
+
+
+
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="col-md-6">
+
+                                                            <div class="item wow slideInLeft" data-wow-duration="1s" >
+
+                                                            <h4 class="en-font"><strong>Non barrier to communicate</strong></h4>
+                                                            <p id="font-18px">ไม่มีกำแพงทางการสื่อสาร ทุกตำแหน่งสามารถแบ่งปันความรู้ ติดต่อช่วยเหลือ<br>ในด้านที่ตนเองเชี่ยวชาญเพื่อให้เกิดผลงานที่ดีที่สุด ในเวลาที่เร็วที่สุด</p>  
+
+
+                                                            </div>
+                                                            <!--- end item --->
+
+
+                                                            <div class="item wow slideInLeft" data-wow-duration="1s" >
+
+                                                            <h4 class="en-font"><strong>Knowledge and skills sharing</strong></h4>
+                                                            <p id="font-18px">แบ่งปันความรู้และทักษะต่าง ๆ ซึ่งกันและกัน อันเป็นการช่วยขยายขีดความสามารถ<br>ขององค์กรอย่างไม่มีสิ้นสุด</p>  
+
+
+                                                            </div>
+                                                            <!--- end item --->
+
+                                                            <div class="item wow slideInLeft" data-wow-duration="1s" >
+
+                                                            <h4 class="en-font"><strong>Be humble and friendly</strong></h4>
+                                                            <p id="font-18px">ความอ่อนน้อมถ่อมตนและเป็นมิตร</p>  
+
+
+                                                            </div>
+                                                            <!--- end item --->
+
+
+
+
+                                                    </div>
+
+                                            </div>
+
+
+
+                                    </div>
+					 
+
+								 
+							</div>
+					</section>
+
+
+
+
+
+			 
+					
+				
+				
+				  
+
+                    
+			 
+
+        
+            </div><!-- #primary -->
+
+
+
+<?php 
+ 
+
+get_footer();
+?>
+
+<script>
+
+var typed4 = new Typed('#typed-ipad', {
+  stringsElement: '#typed-strings-ipad',
+  typeSpeed: 100,
+  backSpeed: 60,
+  startDelay:1500,
+  loop: true,
+  loopCount: Infinity,
+  
+});
+  /* end typing ipad */
+
+ </script>
