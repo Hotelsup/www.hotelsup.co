@@ -1,0 +1,327 @@
+<?php
+ /* Template Name: Social Impact */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+                        
+                    <?php if ( wp_is_mobile() ) : ?>
+                        <section id="header_socail_impact" class="header-section" style="background-image:url(<?php the_field('background_mobile');?>)"  >
+                    <?php else : ?>
+                        <section id="header_socail_impact" class="header-section" style="background-image:url(<?php the_field('background');?>)"  >
+                    <?php endif; ?>
+
+                  
+
+                
+
+                        <div class="container">
+                           <div class="row">
+
+ 
+
+
+                           </div>
+                        </div>
+
+                    </section>  
+                    
+                    <?php if ( have_rows( 'group1' ) ) : ?>
+	                <?php while ( have_rows( 'group1' ) ) : the_row(); ?>
+                    <section id="sister_content_1" class="section">
+
+                        <div class="container">
+
+                                <div class="row justify-content-end">
+
+
+                                    <div class="col-lg-7">
+                          
+                                        <div class="socail_text_detail" class="  text-center">
+
+                                              
+
+                                                <?php if ( get_sub_field( 'title' ) ) : ?>
+                                                <h2 class="module_title smaller">
+                                                <span><?php the_sub_field( 'title' ); ?></span>    
+                                               </h2>
+                                               <?php endif ?>
+
+
+                                               <div class="paragraph"> 
+                                               <?php the_sub_field( 'paragraph' ); ?>
+                                                </div>
+
+                                        </div>  
+
+                           
+
+                                        <div class="video_gallery" class=" ">
+
+                                                <div id="social_gallery_video" class="social_gallery_video">   
+                                                    
+                                                
+                                                         <?php if( have_rows('slide_thumnail') ): ?>
+                                                        
+                                                        <?php while( have_rows('slide_thumnail') ): the_row(); 
+                                                               
+                                                                ?>
+                                                                <div>
+                                                                        <div class="item" style="background-image:url('<?php  the_sub_field('image') ?>')">
+
+                                                                            <img src="<?php  the_sub_field('image') ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                                      
+                                                                        </div>
+                                                                  </div>
+
+                                                                    <?php endwhile; ?>
+                                                            
+                                                          <?php endif; ?>
+
+
+
+                                                   </div>    
+                                                   
+                                                   
+
+                                                   <div id="social_gallery_video_nav" class="social_gallery_video_nav">
+
+                                                                
+                                                   <?php if( have_rows('slide_thumnail') ): ?>
+                                                        
+                                                        <?php while( have_rows('slide_thumnail') ): the_row(); 
+                                                               
+                                                                ?>  <div>
+                                                                        <div class="item" style="background-image:url('<?php  the_sub_field('image') ?>')">
+                                                                            <img src="<?php  the_sub_field('image') ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                                      
+                                                                        </div>
+
+
+                                                                      </div>    
+                                                                    <?php endwhile; ?>
+                                                            
+                                                          <?php endif; ?>
+
+
+                                                                
+                                                   </div>                     
+
+
+                                        </div>
+                                     </div>
+
+                                </div>
+
+                        </div>
+
+                    </section>   
+
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+
+
+                    <div>
+
+
+                
+
+                    </div>
+
+
+
+
+                    <section id="social_content_2" class="section">
+
+                            <div class="container-lg">
+
+
+                                    <div class="row  ">
+
+
+                                    <?php if ( have_rows( 'group2' ) ) : ?>
+                                        <?php while ( have_rows( 'group2' ) ) : the_row(); ?>
+                                        
+                                         
+                                                <div class="item col-lg-6 image">
+                                                     
+                                            
+                                                          
+                                                            <div class="sis_gallery">
+
+                                                                    <div id="sis_gallery_id2">     
+                                                                        <?php 
+                                                                            $images = get_sub_field('slide');
+                                                                            if( $images ): ?>
+                                                                                
+                                                                                    <?php foreach( $images as $image ): ?>
+                                                                                        <div class="item">
+                                                                                                <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                                                        
+                                                                                        </div>
+                                                                                    <?php endforeach; ?>
+                                                                                
+                                                                            <?php endif; ?>
+
+                                                                    </div>                       
+                                                            </div>
+
+
+                                                                                      
+                                                 </div>      
+                                                 
+                                                 
+
+                                                 <div class="col-lg-6 text">
+
+                                                
+                                                           <?php if ( get_sub_field( 'title' ) ) : ?>
+                                                                    <h2 class="module_title smaller">
+                                                                    <span><?php the_sub_field( 'title' ); ?></span>    
+                                                                </h2>
+                                                                <?php endif ?>
+
+
+                                                                <div class="paragraph"> 
+                                                                <?php the_sub_field( 'paragraph' ); ?>
+                                                                    </div>
+
+                                                 </div>
+                                       
+                                        <?php endwhile; ?>
+                                        <?php endif; ?>
+
+
+
+
+                                    </div>
+
+
+
+                            </div>
+
+                    </section>
+
+
+
+
+                    <section id="social_content_3" class="section">
+
+                          <div class="container-lg">
+
+
+                                 <div class="row  ">
+
+                    
+                                    <?php if ( have_rows( 'group3' ) ) : ?>
+                                        <?php while ( have_rows( 'group3' ) ) : the_row(); ?>
+                                        
+                                         
+                                                <div class="item col-lg-6 text">
+ 
+                                            
+                                                            <div class="socail_text_detail" class=" ">
+
+                                                                  
+
+                                                                    <?php if ( get_sub_field( 'title' ) ) : ?>
+                                                                    <h2 class="module_title smaller">
+                                                                    <span><?php the_sub_field( 'title' ); ?></span>    
+                                                                </h2>
+                                                                <?php endif ?>
+
+
+                                                                <div class="paragraph"> 
+                                                                <?php the_sub_field( 'paragraph' ); ?>
+                                                                    </div>
+
+                                                            </div>  
+
+                                                                               
+                                                 </div>      
+                                                 
+                                                 
+
+                                                 <div class="item col-lg-6 image">
+
+
+                                                 <div class="sis_gallery" class=" ">
+
+                                                        <div id="sis_gallery_id3">     
+                                                        <?php 
+                                                                $images = get_sub_field('slide');
+                                                                if( $images ): ?>
+                                                                
+                                                                        <?php foreach( $images as $image ): ?>
+                                                                        <div class="item">
+                                                                                <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                                        
+                                                                        </div>
+                                                                        <?php endforeach; ?>
+                                                                
+                                                                <?php endif; ?>
+
+                                                        </div>                       
+                                                        </div>
+
+                                                   </div>
+                                       
+                                        <?php endwhile; ?>
+                                        <?php endif; ?>
+
+
+                                        </div>
+
+
+
+                                       </div>
+
+                               </section>
+
+
+
+                               <?php if(get_field('cotact Button'))     :?>                                            
+                               <section id="social_content_contact" class="section">
+
+                                   <div class="container">
+
+
+                                   <?php the_field( 'cotact Button' ); ?>
+
+
+                                   </div>
+
+                                </section>
+                                <?php endif ; ?>
+
+
+
+                       
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                               <?php include 'template_part/follow_our_social.php';?>
+
+ 
+
+            </div><!-- #primary -->
+
+ 
+
+
+<?php 
+ 
+
+get_footer();
