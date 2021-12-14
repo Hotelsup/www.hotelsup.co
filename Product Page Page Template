@@ -1,0 +1,558 @@
+<?php
+ /* Template Name: Product Page */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+
+
+                    <section id="product_title_bg" class="section" style="background-image: url('<?php the_field('title_background'); ?>');background-size: cover;">
+						<div class="container">
+						<div class="title_item">
+							<div class="img_title">
+								<img src="<?php the_field('title_image'); ?>">
+							</div>
+						
+							<div class="title_content">
+								<div class="title_subject">
+									<h1>
+										<?php the_field('title_subject'); ?>
+									</h1>
+								</div>
+								<div class="title_description">
+									<?php the_field('title_description'); ?>
+								</div>
+							</div>
+						</div>
+						</div>
+                    </section>   
+
+
+                    
+                    <section class="section-pc" id="tab-content">
+                  
+						<div class="container">
+							<div class="title_head">
+								<h1><?php the_field('title_head'); ?></h1>
+							</div>
+						  
+							<div class="tabs" >
+  								<div class="tab-header" >
+									<div id="rice_tab" class="head_tab active"><?php the_field('menu_1'); ?><div class="tab-indicator"></div></div>
+									<div id="pasta_tab" class="head_tab"><?php the_field('menu_2'); ?><div class="tab-indicator"></div></div>
+									<div id="ready_tab" class="head_tab"><?php the_field('menu_3'); ?><div class="tab-indicator"></div></div>
+									<div id="snacks_tab" class="head_tab"><?php the_field('menu_4'); ?> <div class="tab-indicator"></div></div>
+									<div id="premix_tab" class="head_tab"><?php the_field('menu_5'); ?> <div class="tab-indicator"></div></div>
+								</div>
+			
+							
+  								<div class="tab-content">
+									
+									<div class="product_list_content active">
+									  <h2><?php the_field('subject_1'); ?></h2>
+									  	<?php the_field('description_1'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_1');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-5 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+													
+														<img src="<?php the_field('product_image'); ?>">
+													
+														<p><?php print the_title(); ?></p>
+													</div>
+													</a>
+													
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+									
+									
+									<div class="product_list_content ">
+									  <h2><?php the_field('subject_2'); ?></h2>
+									  	<?php the_field('description_2'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_2');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-4 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+<!-- 													<div class="product_list_img"> -->
+														<img src="<?php the_field('product_image'); ?>">
+<!-- 													</div> -->
+<!-- 													<div class="product_list_name"> -->
+														<p><?php print the_title(); ?></p>
+<!-- 													</div> -->
+													</div>
+													</a>
+														
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+									
+									
+									<div class="product_list_content " >
+									  <h2><?php the_field('subject_3'); ?></h2>
+									  	<?php the_field('description_3'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_3');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-4 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+<!-- 													<div class="product_list_img"> -->
+														<img src="<?php the_field('product_image'); ?>">
+<!-- 													</div> -->
+<!-- 													<div class="product_list_name"> -->
+														<p><?php print the_title(); ?></p>
+<!-- 													</div> -->
+													</div>
+													</a>
+														
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+									
+									
+									<div class="product_list_content ">
+									  <h2><?php the_field('subject_4'); ?></h2>
+									  	<?php the_field('description_4'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_4');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-3 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+<!-- 													<div class="product_list_img"> -->
+														<img src="<?php the_field('product_image'); ?>">
+<!-- 													</div> -->
+<!-- 													<div class="product_list_name"> -->
+														<p><?php print the_title(); ?></p>
+<!-- 													</div> -->
+													</div>
+													</a>
+														
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+									
+									
+									<div class="product_list_content ">
+									  <h2><?php the_field('subject_5'); ?></h2>
+									  	<?php the_field('description_5'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_5');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-3 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+<!-- 													<div class="product_list_img"> -->
+														<img src="<?php the_field('product_image'); ?>">
+<!-- 													</div> -->
+<!-- 													<div class="product_list_name"> -->
+														<p><?php print the_title(); ?></p>
+<!-- 													</div> -->
+													</div>
+													</a>
+														
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+    
+  								</div>
+							</div>
+						</div>
+                   </section> 
+				
+				<section class="section-mob" id="tab-contentm">
+                  
+						<div class="container">
+							<div class="title_head">
+								<h1><?php the_field('title_head'); ?></h1>
+							</div>
+						  
+							<div class="tabsm" >
+								
+  								
+								<div class="dropdown tab-headerm" id="nav_about_mobile">
+								  <div class="dropbtn"><span>Select menu</span></div>
+								  <div class="dropdown-content" id="subabout">
+									<div class="head_tabm active"><p><?php the_field('menu_1'); ?></p></div>
+								  	<div class="head_tabm"><p><?php the_field('menu_2'); ?></p></div>
+								  	<div class="head_tabm"><p><?php the_field('menu_3'); ?></p></div>
+								  	<div class="head_tabm"><p><?php the_field('menu_4'); ?></p></div>
+								  	<div class="head_tabm"><p><?php the_field('menu_5'); ?></p></div>
+								  </div>
+								</div>
+							
+			
+							
+  								<div class="tab-contentm">
+									
+									<div class="product_list_contentm active">
+									  <h2><?php the_field('subject_1'); ?></h2>
+									  	<?php the_field('description_1'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_1');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-5 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+													
+														<img src="<?php the_field('product_image'); ?>">
+													
+														<p><?php print the_title(); ?></p>
+													</div>
+													</a>
+													
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+									
+									
+									<div class="product_list_contentm ">
+									  <h2><?php the_field('subject_2'); ?></h2>
+									  	<?php the_field('description_2'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_2');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-4 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+<!-- 													<div class="product_list_img"> -->
+														<img src="<?php the_field('product_image'); ?>">
+<!-- 													</div> -->
+<!-- 													<div class="product_list_name"> -->
+														<p><?php print the_title(); ?></p>
+<!-- 													</div> -->
+													</div>
+													</a>
+														
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+									
+									
+									<div class="product_list_contentm " >
+									  <h2><?php the_field('subject_3'); ?></h2>
+									  	<?php the_field('description_3'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_3');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-4 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+<!-- 													<div class="product_list_img"> -->
+														<img src="<?php the_field('product_image'); ?>">
+<!-- 													</div> -->
+<!-- 													<div class="product_list_name"> -->
+														<p><?php print the_title(); ?></p>
+<!-- 													</div> -->
+													</div>
+													</a>
+														
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+									
+									
+									<div class="product_list_contentm ">
+									  <h2><?php the_field('subject_4'); ?></h2>
+									  	<?php the_field('description_4'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_4');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-3 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+<!-- 													<div class="product_list_img"> -->
+														<img src="<?php the_field('product_image'); ?>">
+<!-- 													</div> -->
+<!-- 													<div class="product_list_name"> -->
+														<p><?php print the_title(); ?></p>
+<!-- 													</div> -->
+													</div>
+													</a>
+														
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+									
+									
+									<div class="product_list_contentm ">
+									  <h2><?php the_field('subject_5'); ?></h2>
+									  	<?php the_field('description_5'); ?>
+										<section class="product_items" id="product_items">	
+											<?php
+											$term = get_field('category_5');
+											$args = array(
+												'post_type' => 'product',
+												'order' => 'ASC',
+												'tax_query' => array(
+													array(
+														'taxonomy' => 'product_category',
+														'field'    => 'term_id',
+														'terms'    => $term,
+													),
+												),
+											);
+											$loop = new WP_Query( $args );
+											 ?>
+											<div class="row">
+											<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+												<div class="col-3 center product_box">
+													
+													<a href="<?php the_permalink(); ?>">
+													<div class="list_b_p">
+<!-- 													<div class="product_list_img"> -->
+														<img src="<?php the_field('product_image'); ?>">
+<!-- 													</div> -->
+<!-- 													<div class="product_list_name"> -->
+														<p><?php print the_title(); ?></p>
+<!-- 													</div> -->
+													</div>
+													</a>
+														
+												</div>
+											<?php endwhile; wp_reset_query(); ?>
+											</div>
+										</section>
+									</div>
+    
+  								</div>
+							</div>
+						</div>
+                   </section>
+
+				
+                    
+				<?php include 'template_part/follow_our_social.php';?>
+
+
+              
+            </div><!-- #primary -->
+
+<style>
+.dropbtn {
+  background-color: #F0F0F0;
+  color: #000;
+  font-family: 'Nexa';
+  border-radius: 0px 40px;
+  font-size: 16px;
+  width:100%;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F0F0F0;
+  border-radius: 0px 40px;
+  min-width: 100%;
+  z-index: 1;
+}
+
+.dropdown-content div {
+  color: black;
+  padding: 16px 16px;
+	    background-color: #f0f0f0;
+  text-decoration: none;
+	margin-top:-12px;
+  display: block;
+	font-size: 25px;
+    width: 100%;
+    font-family: 'Nexa';
+}
+
+.dropdown-content div:hover {background-color: #F0F0F0}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #F0F0F0;
+}
+</style>
+
+<?php 
+ 
+
+get_footer();
