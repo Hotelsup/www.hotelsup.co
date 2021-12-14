@@ -1,0 +1,570 @@
+<?php
+ /* Template Name: Contact Page */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+                 <section id="contact_header" class="section">
+
+						<div class="container">
+							<div class="title_text wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
+								<h1><?php the_title(); ?></h1>
+							</div>
+							 
+                        </div>
+
+ 
+
+
+                    </section>
+				
+
+
+            
+                    
+                <section id="contact_tab"  class="section">
+
+
+                                            
+                        <div class="container">
+
+
+                                <div class="row justify-content-center">  
+
+                                    <div class="col-lg-11"> 
+
+                                                <div class="row  ">
+
+
+                                                        
+                                                        
+                                                        <div class="col-md-6">
+
+
+                            
+                                                                
+
+
+
+                                                            <div id="contact_lists">
+
+
+                                             
+                                                              <?php if ( my_wp_is_mobile() ) : ?>
+
+
+                                                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                                                    <div data-wow-duration=".5s" data-wow-delay="1.5s" class="  active  wow slideInRight" id="v-pills-1-tab"   type="button" >
+                                                                        <a href="tel:021159881">    
+																		<div class="en-font">
+																				02 115 9881
+                                                                        </div></a>
+                                                                    </div>
+
+                                                                    <div data-wow-duration=".5s" data-wow-delay="1.8s" class=" wow slideInRight" id="v-pills-2-tab"   type="button"  >
+                                                                        <a href="mailto:hello@hotelsup.co">    
+																		<div class="en-font">
+																				hello@hotelsup.co
+                                                                            </div></a>
+                                                                    </div>
+
+                                                                    <div data-wow-duration=".5s" data-wow-delay="2s" class=" wow slideInRight" id="v-pills-3-tab"  type="button"  >
+                                                                            <div id="line_contact"> <a href="https://line.me/R/ti/p/@linedevelopers?from=page" target="_blank"> Line </a></div>
+                                                                    </div>
+
+                                                                    <div data-wow-duration=".5s" data-wow-delay="2.2s" class=" wow slideInRight" id="v-pills-4-tab"  type="button"  data-bs-toggle="modal" href="#map_popup" >
+                                                                        <div  class="en-font" id="address_contact">367/1 ถนนรัชดาภิเษก ซอย 10<br>
+                                                                    ห้วยขวาง กรุงเทพฯ ประเทศไทย</div>
+                                                                    </div>
+
+                                                                    <div data-wow-duration=".5s" data-wow-delay="2.4s" class=" wow slideInRight" id="v-pills-5-tab"   type="button" data-bs-toggle="modal"  href="#contact_form_popup">
+                                                                    <div id="address_contact" class="en-font">Leave a message</div>
+                                                                    </div>
+
+
+                                                                    </div>
+                                                                    <!-- end mobile ---->
+
+
+                                                                <?php else : ?>
+
+                                                                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                                                                    <div data-wow-duration="1s" data-wow-delay="1.5s" class="  active  wow slideInRight" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">
+																						<a id="tel-link" href="tel:021159881">
+                                                                                            <div class="en-font">
+																								02 115 9881
+                                                                                        </div></a>
+                                                                                    </div>
+
+                                                                                    <div data-wow-duration="1s" data-wow-delay="1.8s" class=" wow slideInRight" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">
+																						<a id="mail-link" href="mailto:hello@hotelsup.co">
+                                                                                            <div class="en-font">
+																								hello@hotelsup.co
+                                                                                            </div></a>
+
+                                                                                    
+                                                                                    </div>
+
+                                                                                    <div data-wow-duration="1s" data-wow-delay="2s" class=" wow slideInRight" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">
+                                                                                            <div id="line_contact"> hellohotelsup</div>
+                                                                                    </div>
+
+                                                                                    <div data-wow-duration="1s" data-wow-delay="2.2s" class=" wow slideInRight" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">
+                                                                                        <div  class="en-font" id="address_contact">367/1 ถนนรัชดาภิเษก ซอย 10<br>
+                                ห้วยขวาง กรุงเทพฯ ประเทศไทย</div>
+                                                                                    </div>
+
+                                                                                    <div data-wow-duration="1s" data-wow-delay="2.4s" class=" wow slideInRight" id="v-pills-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab" aria-controls="v-pills-5" aria-selected="false">
+                                                                                    <div id="address_contact" class="en-font">Leave a message</div>
+                                                                                    </div>
+
+
+                                                                                </div>
+                                                                                <!-- end desktop ---->
+
+                                                                             <?php endif; ?>
+
+                                                            </div>
+
+                                                            
+                                                        
+                                                        </div>  
+
+                                                            
+                                                        <div class="col-md-6">
+
+
+
+                                                            <div class="tab-content" id="v-pills-tabContent">
+                                                                <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+
+                                                                
+
+                                                                </div>
+
+                                                                <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+
+
+
+                                                                </div>
+
+
+                                                                <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+
+                                                                    
+                                                                    <div id="qr_code">
+
+                                                                        <img src="https://hotelsup.co/wp-content/uploads/2021/11/Qr.png" alt="">
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+
+                                                                    
+ 
+
+                                                                        <div id="google_map">
+
+                                                                      
+																		<iframe src="https://snazzymaps.com/embed/351125" width="700px" height="440px" style="border-radius: 20px;"></iframe>
+
+                                                                         
+                                                                         </div>
+ 
+
+
+
+                                                                </div>
+                                                                <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+
+                                                                        <div id="contact_form">
+                                                                                    <?php echo do_shortcode('[forminator_form id="397"]'); ?>
+
+                                                                        </div>
+
+
+                                                                </div>
+                                                            </div>
+
+
+                                                            <!-- mobile map-->
+
+
+                                                                          <div class="modal fade contact_modal" id="map_popup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                                                            <div class="modal-dialog  ">
+                                                                                <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                     <button type="button" class="btn-close-contact" data-bs-dismiss="modal" aria-label="Close">
+
+                                                                                    <img src="<?php echo get_stylesheet_directory_uri() ; ?>/assests/img/mobile/arrow_back.svg" alt="">
+
+                                                                                    </button>
+                                                                                    <h5 class="modal-title en-font" id="exampleModalToggleLabel">
+                                                                                        <strong>Location </strong>
+
+
+                                                                                        </h5>
+                                 
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                <div id="google_map">
+
+                                                                                   
+ 
+
+                                                                                            <?php echo do_shortcode('[google_map_easy id="1"]'); ?>
+
+
+                                                                                      
+
+                                                                            
+
+
+                                                                                   
+                                                                                    <div id="address_mobile_popup"><strong>367/1</strong> ถนนรัชดาภิเษก ซอย <strong>10</strong><br>
+ห้วยขวาง กรุงเทพฯ ประเทศไทย</div>
+
+                                                                                    
+                                                                                    </div>
+                                                                                </div>
+                                                                            
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        
+                                                                          <div class="modal fade contact_modal" id="contact_form_popup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                                                            <div class="modal-dialog  ">
+                                                                                <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                     <button type="button" class="btn-close-contact" data-bs-dismiss="modal" aria-label="Close">
+
+                                                                                    <img src="<?php echo get_stylesheet_directory_uri() ; ?>/assests/img/mobile/arrow_back.svg" alt="">
+
+                                                                                    </button>
+                                                                                    <h5 class="modal-title en-font" id="exampleModalToggleLabel">
+                                                                                        <strong>Leave a message </strong>
+
+
+                                                                                        </h5>
+                                 
+                                                                                </div>
+                                                                                <div class="modal-body">
+
+                                                                         
+                                                                                <div id="contact_form">
+
+                                                                                   
+
+
+                                                                                     <?php echo do_shortcode('[forminator_form id="397"]'); ?>
+
+                                                                                
+                                                                                    
+                                                                                    </div>
+                                                                                </div>
+                                                                            
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                            
+                                                        
+                                                        </div>  
+
+
+
+
+                                                </div> <!--- end row--->
+
+
+
+                                     </div> <!--- end row--->
+
+
+
+                                     </div> <!--- end row--->
+
+              
+
+                            </div>     <!--- end container--->
+
+
+                        </section>   
+
+
+          
+ 
+
+            </div><!-- #primary -->
+
+
+  <?php if( have_rows('map') ): ?>
+ <?php while( have_rows('map') ): the_row(); ?>
+
+            <script type="text/javascript">
+
+        
+/*<!-- google map-->*/
+function initMap() {
+    var center = {lat:<?php the_sub_field('latitude'); ?>, lng:<?php the_sub_field('longitude'); ?>};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+
+    center: center,
+
+    // How you would like to style the map. 
+        // This is where you would paste any style found on Snazzy Maps.
+        styles:[
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e9e9e9"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dedede"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#333333"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    }
+]
+        /* end map style */
+
+
+        });
+
+    
+
+
+            var infowindow =  new google.maps.InfoWindow({});
+
+                        // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(<?php the_sub_field('latitude'); ?>,<?php the_sub_field('longitude'); ?>),
+                map: map,
+                icon: { url: "<?php the_sub_field('icon_marker'); ?>"},
+            
+                title: 'SLINGSHOT GROUP CO.,LTD'
+            });	
+
+
+
+     /*   var contentString = '<div id="content" class="text-black">'+              
+                        '<div id="content">'+                          
+                        '<p><b>SLINGSHOT GROUP CO.,LTD</b> <br>'+
+                        '1011 Supalai Grand tower, 14th floor Unit 1402 Rama lll Road,<br>'+
+                        'Chongnonsee,Yannawa, Bangkok 10120<br>'+
+                        '</div>'+
+                        '</div>';*/
+
+
+
+            var infowindow =  new google.maps.InfoWindow({
+
+            content: contentString
+
+
+            });
+
+            marker.addListener('click', function() {
+                            infowindow.open(map, marker);
+        });
+
+    
+
+
+    
+}
+</script>
+
+
+
+
+<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSvPpEPb0zx9UUuB0pV_bMJDJVfMG67ME&callback=initMap">
+</script>
+
+
+<?php endwhile; ?>
+<?php endif; ?>
+
+
+<?php 
+ 
+
+get_footer();
