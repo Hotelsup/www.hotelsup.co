@@ -1,0 +1,841 @@
+<?php
+ /* Template Name: Home Page */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+                    <section>
+
+                            <div class="container">
+
+                                        <div id="home_slide" class="carousel slide home_slide  " data-bs-ride="carousel" >
+                                    
+                                            <div class="carousel-inner">
+
+                                           
+
+                                                <!----slide--->
+                                                <div class="carousel-item  active  "  >
+                                                    
+                                                    <div class="row">
+
+                                                    
+
+                                                        <?php if( have_rows('text_header') ): ?>
+                                                        <?php while( have_rows('text_header') ): the_row(); ?>   
+                                                        <div class="col-md-6 text-right-sl">
+
+                                                            <div class="description">
+                                                                <h1 class="wow fadeInUp en-font"><?php the_sub_field('h1') ; ?></h1>
+
+                                                                <div class="detail"> 
+
+                                                                        <h3 class=" en-font "> <?php the_sub_field('h2') ; ?></h3>
+                                                                        <p>
+                                                                        <?php the_sub_field('h3') ; ?>
+                                                                        </p>
+
+                                                                  </div>
+
+                                                                <?php if(get_sub_field('link')) :?>
+                                                                <div class="ab-btn"> <a href="<?php the_sub_field('link') ; ?>" class=" bt-arrow"><?php the_sub_field('text_link') ; ?></a>   </div>
+                                                                <?php endif;?>  
+
+                                                            </div>
+                            
+
+                                                            
+                                                        </div>
+
+                                                        <?php endwhile;   ?>
+                                                    <?php endif; ?>
+
+                                                    <div class="col-md-6 img-left-sl">
+                                                                   <div id="h_head">
+                                                                            <div  id="view-image" >
+                                                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assests/img/home/view.jpg"/>                
+
+                                                                                            </div>            
+                                                                                        </div>
+                                                        </div>
+                                                    </div><!--- end row -->
+                    
+                                            
+                                                </div>
+
+                                                <!----end slide--->
+
+ 
+                    
+                                                </div>  <!----carousel-inner--->
+                    
+
+                                              
+
+                                            </div> <!--end home slide -->
+                             </div>                                
+
+                    </section>
+
+
+
+
+
+      
+					<div class="bg-service">
+						
+							<?php the_field('background_service') ; ?> 
+						
+					</div>
+                    <section id="home_service" class="section">
+                            <div class="container" id="nav-one">
+                                        <div class="row">
+                                        <div class="col-12 mb-lg-5">
+                                            <h3 class="module_title en-font text-md-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                                                 <span id="service-home-text-head"><?php the_field('service_headline') ; ?></span>         
+                                            </h3> 
+                                            <div class="only-mobile" id="top_text_m" >            
+                                            <?php the_field('intro_text') ; ?>      
+                                            </div>                        
+                                            </div>      
+                                             <div id="home_service_left_img_block" class="col-md-8 col-lg-9">
+                                                    <div id="home_service_block" class="animate-circle wow" >
+                                                         <?php the_field('svg_image_code') ; ?>         
+                                                	</div>
+                                             </div>   
+                                             <div id="home_service_right_text_block" class="col-lg-3 col-md-4" >
+                                                        <div class="  tab-content"   id="nav-tabContent">
+                                                                <div class="tabcontent active" id="service0" >            
+                                                                          <?php the_field('intro_text') ; ?>   
+                                                                </div>
+
+                                                                <div class="tabcontent " id="service1" >                   
+                                                                    <?php the_field('accounting_text') ; ?>     
+                                                                </div>
+
+                                                                <div class="tabcontent " id="service2" >          
+                                                                 <?php the_field('marketing_text') ; ?>     
+                                                                 </div> 
+
+                                                                <div class="tabcontent " id="service3" >          
+                                                                <?php the_field('operation_text') ; ?>    
+                                                                </div>
+                                             </div>   
+                                        </div>
+                              </div>
+						</div>
+
+                    </section>                        
+                    <?php if ( my_wp_is_mobile() ) : ?>      
+                        
+                    <!---- mobile -->                                                               
+                    <section id="about_home" class="section d-block d-lg-none mobile">
+                                                                
+                        <div class="row">
+                        <div class="col-md-12   align-self-center">
+
+                                <div id="book_div">
+
+                                    <div id="book_div_slide">
+
+                                            <a href="https://hotelsup.flywheelsites.com/services/#service_tab"><div></div></a>
+                                            <a href="https://hotelsup.flywheelsites.com/services/#operation_content_5"><div></div></a>
+                                            <a href="https://hotelsup.flywheelsites.com/services/#marketing-content"><div></div></a>
+
+
+                                    </div>                           
+                                                                    
+
+                                </div>                                        
+
+                            <div id="table_slide">     
+                                
+                                            <div>
+
+                                                    <div style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/operation_mobile.jpg')">
+                                                            <div class="container">  
+                                                                
+                                                                <div class="row"> 
+                                                                        <div class="col-lg-7  "> 
+
+
+                                                                             <header>                     
+                                                                                           <span class="b-m-t">Hotelsup</span>                       
+                                                                                        <h2 class="module_title  ">
+                                                                                        
+                                                                                                <span>แก้ปัญหาให้โรงแรมอย่างครบวงจร</span>
+                                                                                        </h2>
+                                                            
+                                                                            </header>     
+
+                                                                                <div id="spin_text_mobile"> <span>ทั้งด้าน</span>     
+
+                                                                                            <div class="type-wrap highlight">
+                                                                                    
+                                                                                                    <h3>  <div id="typed-strings"> <span> Operation</span><span>การบริหารโรงแรม  </span></div></h3> 
+                                                                                                    <span id="typed" class="" style="white-space:pre;"></span>
+                                                                                            
+                                                                                            </div>
+                                                                                        
+                                                                                </div>
+
+                                                                                <p class="mb-5 table-description"> <?php the_field('about_description') ; ?></p>
+                                                                    
+
+                                                                                
+                                                               
+                                                                        </div>           
+                                                                </div>                 
+                                                            </div>    
+                                                            
+                                                </div>            
+                                            </div> 
+                                            
+                                            <!---- end item-->
+
+                                            <div>
+
+                                            <div style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/marketing_mobile.jpg')">
+                                                        <div class="container">    
+                                                            <div class="row">  
+                                                                <div class="col-lg-7  ">                
+                                                                       
+
+
+                                                                    
+                                                                    <header>                     
+                                                                                           <span class="b-m-t">Hotelsup</span>                    
+                                                                                        <h2 class="module_title  ">
+
+                                                                                        
+                                                                                                <span>สร้างกลยุทธ์การขายห้องพักบน OTAs</span>
+                                                                                        
+                                                                                            
+                                                            
+
+                                                                                        </h2>
+
+ 
+                                                            
+                                                                            </header>     
+
+                                                                                <div id="spin_text_mobile"> <span>ทั้งด้าน</span>     
+
+                                                                                            <div class="type-wrap highlight">
+                                                                                    
+                                                                                                    <h3>  <div id="typed-strings2"> <span> Marketing</span><span>การตลาด  </span></div></h3> 
+                                                                                                    <span id="typed2" class="" style="white-space:pre;"></span>
+                                                                                            
+                                                                                            </div>
+                                                                                        
+                                                                                </div>
+
+                                                                        <p class="mb-5 table-description"> <?php the_field('about_description') ; ?></p>
+                                                            
+
+                                                                        
+                                                                        <?php if( have_rows('about_link') ): ?>
+                                                                        <?php while( have_rows('about_link') ): the_row(); ?>   
+
+
+                                                                            <?php if( get_sub_field('text') ): ?>    
+                                                                                    <a href="<?php the_sub_field('link') ; ?>" class="btn btn-success"><?php the_sub_field('text') ; ?></a>   
+                                                                            <?php endif; ?>
+
+                                                                        <?php endwhile; $active="" ; ?>
+                                                                        <?php endif; ?>
+                                                                </div>          
+                                                            </div>             
+                                                        </div>    
+                                                        
+                                                </div>            
+                                        </div> 
+
+                                        <!---- end item-->
+
+
+                                        <div>
+
+                                            <div style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/assests/img/mobile/accounting_mobile.jpg')">
+                                                    <div class="container"> 
+                                                        
+                                                        <div class="row">  
+
+                                                                <div class="col-lg-7  ">                               
+                                                              
+
+                                                                            
+                                                                <header>                     
+                                                                                           <span class="b-m-t">Hotelsup</span>                     
+                                                                                        <h2 class="module_title  ">
+
+                                                                                        
+                                                                                                <span>บริหารบุคลากรทุกแผนกของโรงแรมอย่าง</span>
+                                                                                        
+                                                                                            
+                                                            
+
+                                                                                        </h2>
+
+ 
+                                                            
+                                                                            </header>     
+
+                                                                                <div id="spin_text_mobile"> <span>ทั้งด้าน</span>     
+
+                                                                                            <div class="type-wrap highlight">
+                                                                                    
+                                                                                                    <h3>  <div id="typed-strings3"> <span> Accounting</span><span>การเงิน-การบัญชี</span></div></h3> 
+                                                                                                    <span id="typed3" class="" style="white-space:pre;"></span>
+                                                                                            
+                                                                                            </div>
+                                                                                        
+                                                                                </div>
+
+
+                                                                    <p class="mb-5 table-description"> <?php the_field('about_description') ; ?></p>
+                                                        
+
+                                                                    
+                                                                    <?php if( have_rows('about_link') ): ?>
+                                                                    <?php while( have_rows('about_link') ): the_row(); ?>   
+
+
+                                                                        <?php if( get_sub_field('text') ): ?>    
+                                                                                <a href="<?php the_sub_field('link') ; ?>" class="btn btn-success"><?php the_sub_field('text') ; ?></a>   
+                                                                        <?php endif; ?>
+
+                                                                    <?php endwhile; $active="" ; ?>
+                                                                    <?php endif; ?>
+                                                            </div>  
+
+                                                        </div>                
+                                                    </div>    
+                                                    
+                                            </div>            
+                                            </div> 
+
+                                            <!---- end item-->
+
+                                            
+                                    
+                                    
+                                </div>     
+                                
+                                <!---- end item slide-->
+
+                            </div>
+
+                                <!---- end col 12  -->
+
+
+                        </div>     <!---- end  row  -->
+
+
+                                                                            
+                                                                    
+
+
+
+                        </section>   
+
+
+                        <!---- end about-home mobile -->
+
+
+
+
+
+
+                  
+
+                    <!---- end about-home -->
+                    <?php else : ?>                                                            
+              
+                    <!---- end mobile -->      
+                    
+                    
+                    <section id="about_home" class="section d-none d-md-block desktop">
+
+                           <div class="row">
+
+
+                                <div class="col-md-12   align-self-center">
+											
+                                        <div id="book_div">
+												
+												
+                                            <div id="book_div_slide">
+												
+												
+												<a href="https://hotelsup.flywheelsites.com/services/#operation_content" ><div id="op"></div></a>
+												<a href="https://hotelsup.flywheelsites.com/services/#marketing-content" ><div id="ma"></div></a>
+												<a href="https://hotelsup.flywheelsites.com/services/#service_sec_7" ><div id="ac"></div></a>
+												
+												<a href="https://hotelsup.flywheelsites.com/services/#operation_content" ><div id="op"></div></a>
+												<a href="https://hotelsup.flywheelsites.com/services/#marketing-content" ><div id="ma"></div></a>
+												<a href="https://hotelsup.flywheelsites.com/services/#service_sec_7" ><div id="ac"></div></a>
+											
+<!-- 												<div></div>
+												<div></div>
+												<div></div> -->
+												
+
+                                            </div>    
+											
+											
+                                                                        
+
+                                        </div>        
+                                        
+                                        
+
+                                    <?php  $num=0; if( have_rows('board') ): ?>
+
+                                    <div id="table_slide">     
+
+                                                <?php while( have_rows('board') ): the_row(); $num++  ?>
+
+                                                    <!---item--->
+                                                    <div>
+
+                                                            <div style="background-image:url('<?php the_sub_field('background') ; ?>')" id="book-bg-ps">
+                                                                    <div class="container">  
+                                                                        
+                                                                        <div class="row"> 
+                                                                                <div class="col-lg-7 align-self-center"> 
+
+
+                                                                                        <header>                     
+                                                                                                    <span class="b-m-t">Hotelsup</span>                     
+                                                                                                <h2 class="module_title  ">
+
+                                                                                                
+                                                                                                        <span id="ab-md-title"><?php the_sub_field('headline') ; ?></span>
+                                                                                                
+                                                                                                    
+                                                                    
+
+                                                                                                </h2>
+
+
+                                                                                            <div class="type-wrap highlight">
+                                                                                            
+                                                                                                    <h3>  <div id="typed-strings<?php echo $num ; ?>"> <?php the_sub_field('tying_text') ; ?></div></h3> 
+                                                                                                    <span id="typed<?php echo $num ; ?>" class="" style="white-space:pre;"></span>
+                                                                                                
+                                                                                            </div>
+                                                                    
+                                                                                    </header>     
+
+                                                                                        <p class="mb-5 table-description"> <?php the_sub_field('description') ; ?></p>
+                                                                            
+
+                                                                                        
+                                                  
+                                                                                </div>           
+                                                                        </div>                 
+                                                                    </div>    
+                                                                    
+                                                        </div>            
+                                                    </div> 
+                                                    
+                                                    <!---- end item-->
+
+                                              <?php endwhile; $num="0"  ?>     
+
+                                                 
+                                            
+                                            
+                                        </div>     
+                                        
+                                        <!---- end item slide-->
+
+                                    </div>
+                                    <?php endif; ?>
+
+                                        <!---- end col 12  -->
+
+                                
+                                </div>     <!---- end  row  -->
+
+
+                                                                                    
+                                                                            
+
+
+
+                          </section>   
+
+                    <?php endif; ?>    
+                    
+                    
+                    <section id="h_section_count" class="section animate-circle">
+                        <div class="container">
+
+
+                            <h3 class='module_title en-font text-center'>
+
+                            <?php the_field('title_our_sucess');?> 
+
+                            </h3>               
+
+                            <div id="count_h_box"  >
+
+                                <div class="row">
+
+
+                                        <?php if( have_rows('counter_left') ): ?>
+                                        <?php while( have_rows('counter_left') ): the_row(); ?>   
+                                            <div class="col-6">
+												
+                                                <h4 id="counter" class="number   "  ><span class="counter-value   en-font" data-count="<?php the_sub_field('number');?>">0</span></h4>
+                                                <span class="text en-font"><?php the_sub_field('text_below');?></span>
+
+                                            </div>
+                                            <?php endwhile; $active="" ; ?>
+                                        <?php endif; ?>
+
+                                        <?php if( have_rows('counter_right') ): ?>
+                                        <?php while( have_rows('counter_right') ): the_row(); ?>   
+                                            <div class="col-6">
+
+                                                <h4 class="number   "   id="counter">
+                                                <span class="counter-value en-font" data-count="<?php the_sub_field('number1');?>">0</span> - 
+                                                <span class="counter-value en-font" data-count="<?php the_sub_field('number2');?>">0</span> <span id="percent">%</span></h4>
+                                                <span class="text en-font"><?php the_sub_field('text_below');?></span>
+
+                                            </div>
+                                            <?php endwhile; $active="" ; ?>
+                                        <?php endif; ?>
+                                    
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        </section>  
+           
+                    
+                    <?php if ( my_wp_is_mobile() ) : ?>
+
+                    <!--- hotel mobile --->            
+                    <section id="hotel_home"   class="section    mobile">
+
+                        <div class="ast-container">
+                                <div id="hotel_home_blocks" class="hotel_block">
+                                    <div class="  row">
+                                         <div id="bonaze_hotel" class="item bg-blue text col-12">
+                                                    <div class="hotel_name ">
+                                                      <h3 class="en-font text-left"> <strong>Bonanza Khaoyai</strong>
+                                                      <span>Khaoyai</span>
+                                                        </h3>
+                                                    </div>
+
+                                                    <div class="hotel-description">
+                                                        <h4> IR-ON hotel Thonglor</h4>
+                                                        <p>Hotelsup เข้ามาช่วยเรื่อง OTAs ได้ดีมากทั้งให้ความรู้และความสะดวกสบาย รวบรวมอัพเดทข้อมูล
+และสถิติกับทางโรงแรมตลอด ช่วยแก้ปัญหาและเพิ่มยอดขายผ่านช่องทางการจองออนไลน์ของโรงแรมได้ดีมากขึ้น
+</p>
+
+
+                                                    </div>
+                                                  
+                                           </div>
+
+                                           <div class="item img-mobile  col-6" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/assests/img/home/hotel1.jpg')">
+
+                                                    
+                                            </div>
+
+                                            <div class="item img-mobile  col-6" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/assests/img/home/hotel2.jpg')">
+                                                
+                                            </div>
+
+                                       
+
+                                    
+                                      
+
+                                          <div class="item bg-gray text style-1 col-10">
+                                                    <div class="hotel_name">
+
+                                                      <h3 class="en-font text-right"> <strong>IR-ON hotel</strong>
+                                                        <span>Thonglor</span>
+                                                    </h3>
+                                                       
+                                                    </div>
+
+                                                    <div class="hotel-description">
+                                                        <h4> IR-ON hotel Thonglor</h4>
+                                                        <p>โฮเทลทรัพย์ช่วยดูแลทั้งการบริหารคน จัดการเอกสาร ลงขายห้องพักออนไลน์ และบัญชี เพื่อดึงภาระออกจากโรงแรมให้มากที่สุดให้ IR-ON สามารถโฟกัสแค่เฉพาะงานบริการและภาพลักษณ์โรงแรมอย่างเต็มที่</p>
+
+
+                                                    </div>
+                                                  
+                                           </div>
+
+
+                                           <div class="item img-mobile  col-6" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/assests/img/home/hotel3.jpg')">
+
+                                                 
+
+                                                </div>
+
+                                          
+
+                                                <div class="item img-mobile  col-6" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/assests/img/home/hotel5.jpg')">
+ 
+
+                                                </div>
+                                      </div>
+
+                                </div>
+
+                         </div>  
+                         
+                    </section>    
+                    
+                        <!--- hotel mobile end --->
+
+
+                    <?php else : ?>     
+
+
+
+
+
+                    <!--- hotel descktop --->            
+                    <section id="hotel_home"   class="section   ">
+
+                        <div class="ast-container">
+
+                  
+
+                                <div id="hotel_home_blocks" class="hotel_block">
+
+                                    <?php if( have_rows('hotel') ): ?>
+
+                                    <?php while( have_rows('hotel') ): the_row();  ?>
+
+
+                                    <div class="items"> 
+
+
+                                        <?php  if( get_sub_field('style') == 'right' ){ ?>
+                                                      <?php if( have_rows('images') ): ?>
+                                                       <?php while( have_rows('images') ): the_row();      ?>
+
+                                                            <?php if( get_sub_field('image1') ): ?>
+
+                                                                    <div class="item">
+
+                                                                    <img src="<?php the_sub_field('image1');?>"/>
+
+                                                                    </div>
+
+                                                            <?php endif; ?>
+
+
+
+                                                            <?php if( get_sub_field('image2') ): ?>
+
+                                                                <div class="item">
+
+                                                                <img src="<?php the_sub_field('image2');?>"/>
+
+                                                                </div>
+
+                                                            <?php endif; ?>
+
+
+
+                                                           
+                                                            <?php if( get_sub_field('image3') ): ?>
+
+                                                                <div class="item">
+
+                                                                <img src="<?php the_sub_field('image3');?>"/>
+
+                                                                </div>
+
+                                                            <?php endif; ?>
+
+
+
+                                                       <?php endwhile; ?>
+                                                    <?php endif; ?>
+
+                                                           
+
+
+
+
+                                                    <div id="bonaze_hotel" class="item bg-blue text">
+
+                                                    
+                                                            <div class="hotel_name">
+
+                                                            <h3 class="en-font"> <strong> <?php the_sub_field('name');?> </strong>
+                                                                <span id="bonaze-small"> <?php the_sub_field('sub_name');?></span>
+                                                                </h3>
+                                                            
+                                                            </div>
+
+                                                            <div class="hotel-description">
+                                                            <?php the_sub_field('detail');?>
+
+
+                                                            </div>
+                                                        
+                                                 </div>
+
+                                          
+
+                                            <?php } ?>
+
+                                            <!--- end style -right ---->
+
+
+
+                                                <?php  if( get_sub_field('style') == 'left' ) { ?>
+                                    
+                                              
+
+                                                    <div id="iron_hotel" class="item bg-gray text">
+                                                                <div class="hotel_name">
+
+                                                                <h3 class="en-font"> <strong> <?php the_sub_field('name');?></strong>
+                                                                    <span> <?php the_sub_field('sub_name');?></span>
+                                                                </h3>
+                                                                
+                                                                </div>
+
+                                                                <div class="hotel-description">
+                                                                <?php the_sub_field('detail');?>
+
+                                                                </div>
+                                                            
+                                                    </div>
+
+
+                                                    <?php if( have_rows('images') ): ?>
+                                                                <?php while( have_rows('images') ): the_row();    ?>
+
+                                                                        <?php if( get_sub_field('image1') ): ?>
+
+                                                                                <div class="item" id="img-1">
+
+                                                                                <img src="<?php the_sub_field('image1');?>"/>
+
+                                                                                </div>
+
+                                                                        <?php endif; ?>
+
+
+
+                                                                        <?php if( get_sub_field('image2') ): ?>
+
+                                                                            <div class="item" id="img-2">
+
+                                                                            <img src="<?php the_sub_field('image2');?>"/>
+
+                                                                            </div>
+
+                                                                        <?php endif; ?>
+
+
+
+                                                                    
+                                                                        <?php if( get_sub_field('image3') ): ?>
+
+                                                                        <div class="item" id="img-3">
+
+                                                                        <img src="<?php the_sub_field('image3');?>"/>
+
+                                                                        </div>
+
+                                                                        <?php endif; ?>
+
+
+
+
+
+
+                                                                <?php endwhile; ?>
+                                                                <?php endif; ?>
+
+                                              
+
+                                                <?php } ?>
+
+                                        <!--- end style -left ---->
+
+                                     </div>    
+                                     
+                                     <?php endwhile; ?>
+                            <?php endif; ?>
+                            
+
+                                </div>
+
+                                <!---end items--->
+
+                           
+
+                         </div>  
+                         
+                    </section>    
+                    
+                        <!--- hotel descktop end --->
+
+                        <?php endif; ?>
+
+
+            </div><!-- #primary -->
+
+		
+		
+<!-- 		   	<audio id="beep-one" controls="controls" preload="auto" style="display:none;">
+				<source src="https://hotelsup.flywheelsites.com/wp-content/uploads/2021/11/bell1.mp3">
+				Your browser isn't invited for super fun time.
+			</audio> -->
+			<script>
+jQuery(function($){
+    $('#p1').click(function(){
+   	 	location.href = "https://hotelsup.co/about/impression/";
+    });
+}); 
+</script>
+<script>
+jQuery(function($){
+    $('#p2').click(function(){
+   	 	location.href = "https://hotelsup.co/about/impression/";
+    });
+}); 
+</script>
+		
+		<script>var beepOne = $("#beep-one")[0];
+$("#nav-one div")
+	.mouseenter(function() {
+		beepOne.play();
+	});</script>
+
+
+<?php 
+ 
+
+get_footer();
+?>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
