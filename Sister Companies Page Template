@@ -1,0 +1,258 @@
+<?php
+ /* Template Name: Sister Companies */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+ 	
+
+
+            <div id="primary-site"  >
+
+                                       
+                    <?php if ( wp_is_mobile() ) : ?>
+                        <section id="header_sister" class="header-section" style="background-image:url(<?php the_field('background_mobile');?>)"  >
+                    <?php else : ?>
+                        <section id="header_sister" class="header-section" style="background-image:url(<?php the_field('background');?>)"  >
+                    <?php endif; ?>
+
+
+              
+
+                        <div class="container">
+                           <div class="row">
+
+ 
+
+
+                           </div>
+                        </div>
+
+                    </section>  
+                    
+                    <?php if ( have_rows( 'group1' ) ) : ?>
+	                <?php while ( have_rows( 'group1' ) ) : the_row(); ?>
+                    <section id="sister_content_1" class="section">
+
+                        <div class="container">
+
+                                <div class="row">
+
+                          
+                                        <div class="sis_text_detail" class="col-md-12 text-center">
+
+                                                <?php if ( get_sub_field( 'logo' ) ) : ?>
+                                                    <div class="logo_sister">
+                                                    <img src="<?php the_sub_field( 'logo' ); ?>" /></div>
+                                                <?php endif ?>
+
+
+                                                <?php if ( get_sub_field( 'title' ) ) : ?>
+                                                <h2 class="module_title smaller">
+                                                <span><?php the_sub_field( 'title' ); ?></span>    
+                                               </h2>
+                                               <?php endif ?>
+
+
+                                               <div class="paragraph"> 
+                                               <?php the_sub_field( 'paragraph' ); ?>
+                                                </div>
+
+                                        </div>  
+
+                           
+
+                                        <div class="sis_gallery" class="col-md-12">
+
+                                                <div id="sis_gallery_id1">     
+                                                    <?php 
+                                                        $images = get_sub_field('slide');
+                                                        if( $images ): ?>
+                                                            
+                                                                <?php foreach( $images as $image ): ?>
+                                                                    <div class="item">
+                                                                            <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                                      
+                                                                    </div>
+                                                                <?php endforeach; ?>
+                                                            
+                                                        <?php endif; ?>
+
+                                                   </div>                       
+                                        </div>
+
+
+                                </div>
+
+                        </div>
+
+                    </section>   
+
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+
+
+                    <div>
+
+
+                    <?php if ( get_field( 'map_image' ) ) : ?>
+                        <div class="line_map_sis d-lg-block d-none">
+                        <div class="container">
+                        <img src="<?php the_field( 'map_image' ); ?>" />
+                         </div>
+                        </div>
+                    <?php endif ?>
+
+
+                    </div>
+
+
+
+
+                    <section id="sister_content_2_3" class="section">
+
+                            <div class="container-sm">
+
+
+                                    <div class="row justify-content-center">
+
+
+                                    <?php if ( have_rows( 'group2' ) ) : ?>
+                                        <?php while ( have_rows( 'group2' ) ) : the_row(); ?>
+                                        
+                                         
+                                                <div class="item col-lg-5">
+                                                    <div class="row">
+                                            
+                                                            <div class="sis_text_detail" class="col-md-12">
+
+                                                                    <?php if ( get_sub_field( 'logo' ) ) : ?>
+                                                                        <div class="logo_sister">
+                                                                        <img src="<?php the_sub_field( 'logo' ); ?>" /></div>
+                                                                    <?php endif ?>
+
+
+                                                                    <?php if ( get_sub_field( 'title' ) ) : ?>
+                                                                    <h2 class="module_title smaller">
+                                                                    <span><?php the_sub_field( 'title' ); ?></span>    
+                                                                </h2>
+                                                                <?php endif ?>
+
+
+                                                                <div class="paragraph"> 
+                                                                <?php the_sub_field( 'paragraph' ); ?>
+                                                                    </div>
+
+                                                            </div>  
+
+                                            
+
+                                                            <div class="sis_gallery" class="col-md-12">
+
+                                                                    <div id="sis_gallery_id2">     
+                                                                        <?php 
+                                                                            $images = get_sub_field('slide');
+                                                                            if( $images ): ?>
+                                                                                
+                                                                                    <?php foreach( $images as $image ): ?>
+                                                                                        <div class="item">
+                                                                                                <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                                                        
+                                                                                        </div>
+                                                                                    <?php endforeach; ?>
+                                                                                
+                                                                            <?php endif; ?>
+
+                                                                    </div>                       
+                                                            </div>
+
+
+                                                      </div>                                     
+                                                 </div>                                       
+                                       
+                                        <?php endwhile; ?>
+                                        <?php endif; ?>
+
+
+                                        <?php if ( have_rows( 'group3' ) ) : ?>
+                                        <?php while ( have_rows( 'group3' ) ) : the_row(); ?>
+                                        
+                                         
+                                                <div class="item col-lg-5">
+                                                    <div class="row">
+                                            
+                                                            <div class="sis_text_detail" class="col-md-12">
+
+                                                                    <?php if ( get_sub_field( 'logo' ) ) : ?>
+                                                                        <div class="logo_sister">
+                                                                        <img src="<?php the_sub_field( 'logo' ); ?>" /></div>
+                                                                    <?php endif ?>
+
+
+                                                                    <?php if ( get_sub_field( 'title' ) ) : ?>
+                                                                    <h2 class="module_title smaller">
+                                                                    <span><?php the_sub_field( 'title' ); ?></span>    
+                                                                </h2>
+                                                                <?php endif ?>
+
+
+                                                                <div class="paragraph"> 
+                                                                <?php the_sub_field( 'paragraph' ); ?>
+                                                                    </div>
+
+                                                            </div>  
+
+                                            
+
+                                                            <div class="sis_gallery" class="col-md-12">
+
+                                                                    <div id="sis_gallery_id3">     
+                                                                        <?php 
+                                                                            $images = get_sub_field('slide');
+                                                                            if( $images ): ?>
+                                                                                
+                                                                                    <?php foreach( $images as $image ): ?>
+                                                                                        <div class="item">
+                                                                                                <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                                                        
+                                                                                        </div>
+                                                                                    <?php endforeach; ?>
+                                                                                
+                                                                            <?php endif; ?>
+
+                                                                    </div>                       
+                                                            </div>
+
+
+                                                      </div>                                     
+                                                 </div>                                       
+                                       
+                                        <?php endwhile; ?>
+                                        <?php endif; ?>
+
+
+
+                                    </div>
+
+
+
+                            </div>
+
+                    </section>
+
+
+                    <?php include 'template_part/follow_our_social.php';?>
+  
+
+            </div><!-- #primary -->
+
+ 
+
+
+<?php 
+ 
+
+get_footer();
